@@ -125,6 +125,9 @@
     .hero_warp .social_link {
         max-width: 720px;
     }
+    .hero_warp.inner_banner .banner_content {
+        text-align: center; /* Center align the content */
+    }
     .hero_warp.inner_banner .social_link {
         display: none;
     }
@@ -495,6 +498,10 @@
         font-size: 50px;
         line-height: 85px;
     } 
+    .hero_warp .banner_content {
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+    }
     .hero_warp .banner_content .banner_title br {
         display: none;
     }
