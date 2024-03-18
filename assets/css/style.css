@@ -813,7 +813,6 @@ header.header.headerFixed {
     font-family: "futuraheavy";
     margin-bottom: 10px;
 } 
-
 .hero_warp .banner_content .exp_list {
     margin: 0;
     padding: 0 0 0 7px;
@@ -835,10 +834,12 @@ header.header.headerFixed {
 .hero_warp .banner_content .exp_list li+li {
     padding-left: 35px;
 }
-
+.hero_warp .banner_content .exp_list li:hover a {
+    color: #E90C3F;
+}
 .hero_warp .banner_content .exp_list li+li:before {
     position: absolute;
-    content: "/";
+    content: "|";
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
