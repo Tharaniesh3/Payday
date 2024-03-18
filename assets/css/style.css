@@ -933,14 +933,15 @@ header.header.headerFixed {
 }
 
 .hero_warp.inner_banner .banner_content .banner_title {
-    font-size: 80px;
+    font-size: clamp(12px, 4vw, 32px); /* Adjust the values as needed */
     line-height: 80px;
     margin-bottom: 0;
 }
 
+
 .hero_warp.inner_banner .banner_content .banner_para {
     color: #f6f7fb;
-    font-size: 20px;
+    font-size: clamp(12px, 1.6vw, 20px); /* Adjust the values as needed */
     line-height: 40px;
     font-weight: 300;
     padding-left: 5px;
