@@ -1,8 +1,14 @@
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900);
-.primary-color {
+@font-face {
+    font-family: 'Futura Heavy';
+    src: url('assets/fonts/futura/futura_heavy_font.woff2') format('woff2');
+  }
+  
+  .primary-color {
     color: #ffffff;
-}
+    font-family: 'Futura Heavy', sans-serif; /* Apply Futura Heavy font to elements with class "primary-color" */
+  }
+  
 
 .brand-color {
     color: rgba(23, 24, 25, 0.6);
@@ -187,6 +193,9 @@ button:hover {
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
+    }
+    .header .container-fluid .row .navbar .navbar-toggler {
+        display: none !important;
     }
 }
 
@@ -382,10 +391,14 @@ header.header .opnen_menu {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+    
+    
 }
 
 header.header .opnen_menu .header_main_menu {
     margin-top: 235px;
+
+    
 }
 
 header.header .opnen_menu .header_main_menu .menu_item {
@@ -396,6 +409,7 @@ header.header .opnen_menu .header_main_menu .menu_item {
     overflow-y: scroll;
     max-width: 460px;
     width: 100%;
+    
 }
 
 header.header .opnen_menu .header_main_menu .menu_item::scrollbar {
@@ -417,7 +431,7 @@ header.header .opnen_menu .header_main_menu .menu_item li:last-child {
 
 header.header .opnen_menu .header_main_menu .menu_item li a {
     color: #ccc;
-    display: inline-block;
+    display: block;
     font-size: 40px;
     line-height: 54px;
     font-weight: 600;
@@ -445,17 +459,19 @@ header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item 
     align-items: center;
     transition: max-height 1s ease-out !important;
     transition-delay: 0s !important;
+    display: none !important;
 }
 
 header.header .opnen_menu .header_main_menu .menu_item li.submenu:hover .submenu_item {
     max-height: 1000px;
     transition: max-height 2s ease-in !important;
+    
 }
 
 header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item li {
     margin-bottom: 0;
     width: 100%;
-    display: block;
+    display: none;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -593,6 +609,7 @@ header.header.menu_open .opnen_menu {
     height: 100%;
     visibility: visible;
     opacity: 1;
+
 }
 
 header.header.menu_open .sub_footer {
@@ -680,7 +697,6 @@ header.header.headerFixed {
 .about_wrap .about_content .bg_text .bg_strock_text {
     font-weight: normal;
     font-size: 350px;
-    font-family: "futuraheavy";
     color: white;
     text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
     letter-spacing: 10px;
@@ -807,11 +823,9 @@ header.header.headerFixed {
 
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
-    font-size: 110px;
-    line-height: 160px;
+    font-size: 70px;
     font-weight: normal;
     font-family: "futuraheavy";
-    margin-bottom: 10px;
 } 
 .hero_warp .banner_content .exp_list {
     margin: 0;
@@ -1060,6 +1074,9 @@ header.header.headerFixed {
 @media (min-width: 1024px) {
     .portfolio_single_wrap {
         margin-left: -14%;
+    }
+    .navbar-toggler hamburger{
+        display: none !important;
     }
     .portfolio_single_wrap .portfolio_single_item {
         padding-left: 14%;
