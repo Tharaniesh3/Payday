@@ -1,9 +1,14 @@
 
 
 @media (max-width: 1366px )  {
+
+
     header.header .opnen_menu .header_main_menu .menu_item {
         height: 350px;
+        
+    
     }
+
     .portfolio_warp .container {
         max-width: 970px;
     }

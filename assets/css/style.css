@@ -141,14 +141,17 @@ a:hover {
 .row.m0 {
     margin: 0;
 }
-
+html,
 body {
     font: 400 16px/28px 'Poppins', sans-serif;
     letter-spacing: 0;
     color: #677294;
+    max-width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll; 
     background: #000;
 }
+
 
 body.menu_open {
     overflow: hidden;
@@ -817,11 +820,17 @@ header.header.headerFixed {
     left: calc(35%); /* Start from 35% of the page width */
     top: 50%; /* Center vertically */
 }
-
+.icons{
+    width: 30px; 
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
     font-size: 70px;
     font-weight: normal;
+    margin-right: 100px;
     font-family: "futuraheavy";
 } 
 .hero_warp .banner_content .exp_list {
@@ -945,7 +954,7 @@ header.header.headerFixed {
 }
 
 .hero_warp.inner_banner .banner_content .banner_title {
-    font-size: clamp(12px, 4vw, 32px); /* Adjust the values as needed */
+    font-size: clamp(12px, 4vw, 32px); 
     line-height: 80px;
     margin-bottom: 0;
 }
