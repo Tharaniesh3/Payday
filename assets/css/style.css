@@ -286,13 +286,10 @@ header.header .navbar .logo .logo_text:before {
     color: #979591;
 }
 
-header.header .navbar .select_lang {
-    margin-right: 58px;
-}
 
 header.header .navbar .select_lang a {
     color: #f6f7fb;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
     opacity: 0.4;
