@@ -289,8 +289,8 @@ header.header .navbar .logo .logo_text:before {
 
 header.header .navbar .select_lang a {
     color: #f6f7fb;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15.5px;
+    font-weight: 200;
     font-family: "Poppins", sans-serif;
     opacity: 0.4;
     -webkit-transition: all 0.3s;
