@@ -826,9 +826,7 @@ header.header.headerFixed {
 }
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
-    font-size: 70px;
     font-weight: normal;
-    margin-right: 100px;
     font-family: "futuraheavy";
 } 
 .hero_warp .banner_content .exp_list {
@@ -952,7 +950,6 @@ header.header.headerFixed {
 }
 
 .hero_warp.inner_banner .banner_content .banner_title {
-    font-size: clamp(12px, 4vw, 32px); 
     line-height: 80px;
     margin-bottom: 0;
 }
@@ -1060,9 +1057,9 @@ header.header.headerFixed {
 
 .portfolio_warp {
     background: #171819;
-    padding: 180px 0 30px;
+    padding: 180px;
     position: relative;
-    z-index: 2;
+    z-index: 100;
 }
 
 .portfolio_warp .port_bg_text {
