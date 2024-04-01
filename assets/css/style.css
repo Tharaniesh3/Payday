@@ -143,7 +143,6 @@ a:hover {
 }
 body {
     font: 400 16px/28px 'Poppins', sans-serif;
-    letter-spacing: 0;
     color: #677294;
     max-width: 100%;
     overflow-x: hidden;
@@ -652,7 +651,8 @@ header.header.headerFixed {
 /* start about_wrap */
 
 .about_wrap {
-    padding: 240px 0;
+    padding: 40px;
+    padding-bottom: 280px;
     background: #000;
     position: relative;
     z-index: 10;
@@ -745,9 +745,9 @@ header.header.headerFixed {
 .hero_warp {
     height: 100vh;
     width: 100%;
-    background: #000 url(../images/landingpage.png) no-repeat;
-    background-position: calc(15%) center; /* Position 40px from the right and center vertically */
-    position: fixed;
+    background: url(../images/landingpage.jpg) no-repeat;
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Position the image in the center */
     z-index: 1;
 }
 
@@ -812,7 +812,8 @@ header.header.headerFixed {
 }
 
 .hero_warp .banner_content {
-    position:absolute;
+    text-align:center;
+    padding: 10%;
 }
 .icons{
     width: 30px; 
@@ -823,6 +824,7 @@ header.header.headerFixed {
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
     font-weight: normal;
+    font-size: 70px;
     font-family: "futuraheavy";
 } 
 .hero_warp .banner_content .exp_list {
@@ -961,11 +963,11 @@ header.header.headerFixed {
 .hero_warp.inner_banner .social_link {
     bottom: 80px;
 }
-
+/* 
 .hero_warp.blog_single_banner {
-    background-image: url(../images/landingpage.png);
+    background-image: url(../images/landingpage.jpg);
     padding-top: 160px;
-}
+} */
 
 .hero_warp.blog_single_banner .banner_content .post_info {
     margin: -10px 0 0;
@@ -1471,6 +1473,8 @@ header.header.headerFixed {
     position: relative;
     padding-bottom: 95px;
     padding-top: 173px;
+    padding-left: 50px;
+    padding-right: 50px;
     z-index: 10;
     overflow: hidden;
 }
