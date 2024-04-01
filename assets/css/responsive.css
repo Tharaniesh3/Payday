@@ -1,18 +1,16 @@
 
 
-@media (max-width: 1366px )  {
-
-
-    header.header .opnen_menu .header_main_menu .menu_item {
-        height: 350px;
-        
-    
-    }
-
+@media (max-width: 1366px ) and (min-width: 1024px) {
     .portfolio_warp .container {
         max-width: 970px;
     }
-    
+
+    header.header .navbar .hamburger .bar_icon {
+        display: none;
+    }
+    header.header .navbar-toggler.hamburger{
+        display: none;
+    }
     .bg_strock_text {
         font-size: 170px;
     }
@@ -21,10 +19,21 @@
     }
 }
 
-
-@media (max-width: 1024px )  {
+@media (max-width: 1024px ) and (min-width: 991px) {
+    header.header .navbar .hamburger .bar_icon {
+        display: none;
+    }
+    header.header .navbar-toggler.hamburger{
+        display: none;
+    }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 70px;
+    }
+    header.header .opnen_menu .header_main_menu .menu_item {
+        height: 350px;
+        
+    }
+    header.header .navbar{ 
     }
     .portfolio_item .port_text .port_title {
         font-size: 36px;
@@ -41,8 +50,7 @@
     }
     .hero_warp .social_link li {
         display: inline-block;
-    }
-    
+    }   
     .hero_warp .social_link li + li {
         margin-left: 10px;
     }
@@ -118,6 +126,7 @@
 
 
 @media (max-width: 991px) {
+ 
     .portfolio_warp {
         padding-top: 75px;
     }
@@ -132,7 +141,7 @@
     }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 28px;
-        line-height: 35px;
+        /* line-height: 35px; */
         margin-bottom: 0;
     }
     .hero_warp.inner_banner .banner_content .banner_para {
@@ -148,7 +157,7 @@
     }
     .hero_warp .banner_content .banner_title {
         font-size: 100px;
-        line-height: 85px;
+        /* line-height: 85px; */
     }
     .hero_warp.inner_banner {
         padding: 120px 0 90px;
@@ -191,6 +200,7 @@
         padding-right: 0;
         font-size: 16px;
         letter-spacing: 2px;
+        
     }
     header.header .sub_footer {
         padding-bottom: 15px;
@@ -317,6 +327,9 @@
 
 
 @media (max-width: 768px) {
+    header.header .navbar .select_lang a {
+        display: none;
+    }
     .hero_warp.inner_banner {
         padding: 80px 0 50px;
     }
@@ -332,14 +345,14 @@
     }
     .hero_warp .banner_content .banner_title {
         font-size: 50px;
-        line-height: 85px;
+        /* line-height: 85px; */
     }
     .hero_warp .banner_content .banner_title br {
         display: none;
     }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 28px;
-        line-height: 30px;
+        /* line-height: 30px; */
     }
     .blog_single_item .blog_post .post_content .post_title {
         font-size: 24px;
@@ -477,14 +490,20 @@
 
 
 
-@media (max-width: 990px) and (min-width: 800px) {
+@media (max-width: 990px) and (min-width: 767px) {
      
     .hero_warp .banner_content .banner_title {
         font-size: 100px;
-        line-height: 85px;
+        /* line-height: 85px; */
     } 
+    header.header .navbar .select_lang a {
+        display: none;
+    }
     .portfolio_item .exp {
         right: -80px;
+    }
+    header.header .navbar .select_lang {
+        display: none;
     }
 }
 /* @media (max-width: 768px ) */
@@ -495,8 +514,9 @@
     
     .hero_warp .banner_content .banner_title {
         font-size: 50px;
-        line-height: 85px;
+        /* line-height: 85px; */
     } 
+   
     .hero_warp .banner_content {
         left: 50%;
         transform: translateX(-50%);
@@ -531,7 +551,7 @@
     }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 28px;
-        line-height: 30px;
+        /* line-height: 30px; */
     }
     header.header .navbar .select_lang a {
         display: none;
@@ -671,9 +691,11 @@
     }
     
     header.header .navbar .select_lang {
+        display: none;
         margin-right: 15px;
     }
     header.header .navbar .select_lang a + a {
+
         margin-left: 12px;
     } 
     .leave_comment .comment_text .comment-title {

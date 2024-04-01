@@ -141,14 +141,12 @@ a:hover {
 .row.m0 {
     margin: 0;
 }
-html,
 body {
     font: 400 16px/28px 'Poppins', sans-serif;
     letter-spacing: 0;
     color: #677294;
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: scroll; 
     background: #000;
 }
 
@@ -195,7 +193,7 @@ button:hover {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1200px;
+        max-width: 100%;
     }
     .header .container-fluid .row .navbar .navbar-toggler {
         display: none !important;
