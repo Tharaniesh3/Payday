@@ -41,9 +41,6 @@
     header.header .navbar-toggler.hamburger{
         display: none;
     }
-    .hero_warp.inner_banner .banner_content .banner_title {
-        font-size: 70px;
-    }
     .portfolio_item .port_text .port_title {
         font-size: 36px;
         line-height: 40px;
@@ -731,6 +728,7 @@
 
 
 @media (max-width: 440px) {
+
     .widget .media .media-body .tn_tittle a,
     .hero_warp.inner_banner .banner_content .banner_para {
         font-size: 14px;
@@ -753,7 +751,7 @@
     }
 }
 /* @media (max-width: 440px ) */
-
+/* 
 
 @media (max-height: 770px)  and (max-width: 992px) {
     header.header .sub_footer {
@@ -777,4 +775,4 @@
     .hero_warp .social_link {
         display: none;
     }
-}
+} */

@@ -801,8 +801,6 @@ header.header.headerFixed {
 
 .hero_warp .bg_img_slider_wrap {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -814,9 +812,7 @@ header.header.headerFixed {
 }
 
 .hero_warp .banner_content {
-    position: relative;
-    left: calc(35%); /* Start from 35% of the page width */
-    top: 50%; /* Center vertically */
+    position:absolute;
 }
 .icons{
     width: 30px; 
@@ -830,7 +826,6 @@ header.header.headerFixed {
     font-family: "futuraheavy";
 } 
 .hero_warp .banner_content .exp_list {
-    margin: 0;
     padding: 0 0 0 7px;
     list-style: none;
 }
