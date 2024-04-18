@@ -1,14 +1,23 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Md. Shahadat Hussain
+@URL: https://themeforest.net/user/droitthemes
+This file contains the styling for the actual tempalte, this is the file you need to edit to change the look of the tempalte.
+---------------------------------------------------- */
 
-@font-face {
-    font-family: 'Futura Heavy';
-    src: url('assets/fonts/futura/futura_heavy_font.woff2') format('woff2');
-  }
-  
-  .primary-color {
+/*=====================================================================
+@Author: Md. Shahadat Hussain
+@Developed By: Masud Rana
+@Developer URL: https://themeforest.net/user/droitthemes
+@Default Styles
+/*----------------------------------------------------*/
+
+/*Base font*/
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900);
+.primary-color {
     color: #ffffff;
-    font-family: 'Futura Heavy', sans-serif; /* Apply Futura Heavy font to elements with class "primary-color" */
-  }
-  
+}
 
 .brand-color {
     color: rgba(23, 24, 25, 0.6);
@@ -141,14 +150,14 @@ a:hover {
 .row.m0 {
     margin: 0;
 }
+
 body {
     font: 400 16px/28px 'Poppins', sans-serif;
+    letter-spacing: 0;
     color: #677294;
-    max-width: 100%;
     overflow-x: hidden;
     background: #000;
 }
-
 
 body.menu_open {
     overflow: hidden;
@@ -192,10 +201,7 @@ button:hover {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 100%;
-    }
-    .header .container-fluid .row .navbar .navbar-toggler {
-        display: none !important;
+        max-width: 1200px;
     }
 }
 
@@ -253,7 +259,6 @@ button:hover {
     top: 0;
 }
 
-
 /*  start hero  */
 
 header.header {
@@ -286,11 +291,14 @@ header.header .navbar .logo .logo_text:before {
     color: #979591;
 }
 
+header.header .navbar .select_lang {
+    margin-right: 58px;
+}
 
 header.header .navbar .select_lang a {
     color: #f6f7fb;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
     font-family: "Poppins", sans-serif;
     opacity: 0.4;
     -webkit-transition: all 0.3s;
@@ -388,14 +396,10 @@ header.header .opnen_menu {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
-    
-    
 }
 
 header.header .opnen_menu .header_main_menu {
     margin-top: 235px;
-
-    
 }
 
 header.header .opnen_menu .header_main_menu .menu_item {
@@ -406,7 +410,6 @@ header.header .opnen_menu .header_main_menu .menu_item {
     overflow-y: scroll;
     max-width: 460px;
     width: 100%;
-    
 }
 
 header.header .opnen_menu .header_main_menu .menu_item::scrollbar {
@@ -428,7 +431,7 @@ header.header .opnen_menu .header_main_menu .menu_item li:last-child {
 
 header.header .opnen_menu .header_main_menu .menu_item li a {
     color: #ccc;
-    display: block;
+    display: inline-block;
     font-size: 40px;
     line-height: 54px;
     font-weight: 600;
@@ -456,19 +459,17 @@ header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item 
     align-items: center;
     transition: max-height 1s ease-out !important;
     transition-delay: 0s !important;
-    display: none !important;
 }
 
 header.header .opnen_menu .header_main_menu .menu_item li.submenu:hover .submenu_item {
     max-height: 1000px;
     transition: max-height 2s ease-in !important;
-    
 }
 
 header.header .opnen_menu .header_main_menu .menu_item li.submenu .submenu_item li {
     margin-bottom: 0;
     width: 100%;
-    display: none;
+    display: block;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -606,7 +607,6 @@ header.header.menu_open .opnen_menu {
     height: 100%;
     visibility: visible;
     opacity: 1;
-
 }
 
 header.header.menu_open .sub_footer {
@@ -644,22 +644,19 @@ header.header.headerFixed {
     padding: 10px 5px 10px 30px;
 }
 
-
 /* end hero */
-
 
 /* start about_wrap */
 
 .about_wrap {
-    padding: 40px;
-    padding-bottom: 280px;
+    padding: 240px 0;
     background: #000;
     position: relative;
     z-index: 10;
 }
 
 .about_wrap .about_title {
-    color: #333;
+    color: #333333;
     font-size: 90px;
     font-weight: normal;
     font-family: "futuraheavy";
@@ -695,7 +692,7 @@ header.header.headerFixed {
 .about_wrap .about_content .bg_text .bg_strock_text {
     font-weight: normal;
     font-size: 350px;
-    color: white;
+    font-family: "futuraheavy";
     text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
     letter-spacing: 10px;
     line-height: 290px;
@@ -737,20 +734,17 @@ header.header.headerFixed {
     height: 45px;
 }
 
-
 /* end about_wrap */
 
-
 /*  start hero  */
+
 .hero_warp {
     height: 100vh;
     width: 100%;
-    background: url(../images/landingpage.jpg) no-repeat;
-    background-size: cover; 
-    background-position: center; /* Position the image in the center */
+    background: #000 url(..assets\images\images\landingpage.jpg.jpg) no-repeat fixed top left;
+    position: fixed;
     z-index: 1;
 }
-
 
 .hero_warp.hide {
     display: none;
@@ -791,6 +785,7 @@ header.header.headerFixed {
     content: "";
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
 }
@@ -801,6 +796,8 @@ header.header.headerFixed {
 
 .hero_warp .bg_img_slider_wrap {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -811,23 +808,17 @@ header.header.headerFixed {
     height: 100vh;
 }
 
-.hero_warp .banner_content {
-    text-align:center;
-    padding: 10%;
-}
-.icons{
-    width: 30px; 
-    height: 30px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
+    font-size: 110px;
+    line-height: 160px;
     font-weight: normal;
-    font-size: 70px;
     font-family: "futuraheavy";
-} 
+    margin-bottom: 10px;
+}
+
 .hero_warp .banner_content .exp_list {
+    margin: 0;
     padding: 0 0 0 7px;
     list-style: none;
 }
@@ -847,12 +838,10 @@ header.header.headerFixed {
 .hero_warp .banner_content .exp_list li+li {
     padding-left: 35px;
 }
-.hero_warp .banner_content .exp_list li:hover a {
-    color: #E90C3F;
-}
+
 .hero_warp .banner_content .exp_list li+li:before {
     position: absolute;
-    content: "|";
+    content: "/";
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
@@ -947,14 +936,14 @@ header.header.headerFixed {
 }
 
 .hero_warp.inner_banner .banner_content .banner_title {
+    font-size: 80px;
     line-height: 80px;
     margin-bottom: 0;
 }
 
-
 .hero_warp.inner_banner .banner_content .banner_para {
     color: #f6f7fb;
-    font-size: clamp(12px, 1.6vw, 20px); /* Adjust the values as needed */
+    font-size: 20px;
     line-height: 40px;
     font-weight: 300;
     padding-left: 5px;
@@ -963,11 +952,11 @@ header.header.headerFixed {
 .hero_warp.inner_banner .social_link {
     bottom: 80px;
 }
-/* 
+
 .hero_warp.blog_single_banner {
-    background-image: url(../images/landingpage.jpg);
+    background-image: url(../images/blog/blog_single_bg.jpg);
     padding-top: 160px;
-} */
+}
 
 .hero_warp.blog_single_banner .banner_content .post_info {
     margin: -10px 0 0;
@@ -1033,7 +1022,6 @@ header.header.headerFixed {
     }
 }
 
-
 /* end hero */
 
 .video-background {
@@ -1049,14 +1037,13 @@ header.header.headerFixed {
     background: #171819;
 }
 
-
 /* start portfolio */
 
 .portfolio_warp {
     background: #171819;
-    padding: 180px;
+    padding: 180px 0 30px;
     position: relative;
-    z-index: 100;
+    z-index: 2;
 }
 
 .portfolio_warp .port_bg_text {
@@ -1072,9 +1059,6 @@ header.header.headerFixed {
 @media (min-width: 1024px) {
     .portfolio_single_wrap {
         margin-left: -14%;
-    }
-    .navbar-toggler hamburger{
-        display: none !important;
     }
     .portfolio_single_wrap .portfolio_single_item {
         padding-left: 14%;
@@ -1361,9 +1345,7 @@ header.header.headerFixed {
     height: calc(50% - 1px);
 }
 
-
 /* end portfolio */
-
 
 /* start portfolio_single_content */
 
@@ -1462,9 +1444,7 @@ header.header.headerFixed {
     margin-bottom: 55px;
 }
 
-
 /* end portfolio_single_content */
-
 
 /* start capabiliti_wrap  */
 
@@ -1473,8 +1453,6 @@ header.header.headerFixed {
     position: relative;
     padding-bottom: 95px;
     padding-top: 173px;
-    padding-left: 50px;
-    padding-right: 50px;
     z-index: 10;
     overflow: hidden;
 }
@@ -1580,9 +1558,7 @@ header.header.headerFixed {
     line-height: 28px;
 }
 
-
 /* end capabiliti_wrap  */
-
 
 /* start testimonial_wrap */
 
@@ -1713,9 +1689,7 @@ header.header.headerFixed {
     font-weight: 300;
 }
 
-
 /* end testimonial_wrap  */
-
 
 /* start client_wrap */
 
@@ -1745,9 +1719,7 @@ header.header.headerFixed {
     opacity: 1;
 }
 
-
 /* end client_wrap */
-
 
 /*  start contact   */
 
@@ -1936,7 +1908,6 @@ header.header.headerFixed {
     color: #292929;
 }
 
-
 /*  end contact   */
 
 .navbar .header_main_menu .menu_item .nav-item.submenu .dropdown-menu {
@@ -1984,7 +1955,6 @@ header.header.headerFixed {
     -webkit-transform: translate3d(0px, 0px, 0px) !important;
     transform: translate3d(0px, 0px, 0px) !important;
 }
-
 
 /*============================= start blog          ================================*/
 
@@ -2291,6 +2261,7 @@ header.header.headerFixed {
     font-family: "Poppins", sans-serif;
     font-size: 12px;
 }
+
 .widget .media .media-body .recent_post_meta li a:hover {
     color: #171819;
 }
@@ -2668,7 +2639,6 @@ header.header.headerFixed {
     height: 50px;
 }
 
-
 /*.leave_comment {
     .comment_text {
         .comment-title {
@@ -2684,14 +2654,13 @@ header.header.headerFixed {
     }
 }*/
 
-
 /*============================= end  blog          ================================*/
-
 
 /* start footer */
 
 .footer {
-    background-color: #000 no-repeat scroll top left/cover;
+    background: #000 no-repeat scroll top left/cover;
+    padding: 115px 0 100px;
     position: relative;
     z-index: 10;
 }
@@ -2857,7 +2826,6 @@ header.header.headerFixed {
 .footer .footer_copy_right a:hover {
     color: #fff;
 }
-
 
 /* end footer */
 
