@@ -299,10 +299,7 @@
     .about_wrap .about_content h4 a:hover {
         color: #171819;
     }
-    header.header .navbar .hamburger .m_menu,
-    header.header .navbar .hamburger .m_close {
-        display: none;
-    }
+
     header.header .opnen_menu .header_main_menu .menu_item li {
         margin-bottom: 10px;
     }
