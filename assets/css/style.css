@@ -283,7 +283,7 @@ header.header .navbar .logo .logo_text {
 
 header.header .navbar .logo .logo_text:before {
     position: absolute;
-    content: "/";
+    content: "|";
     left: -15px;
     top: -8px;
     width: 100%;
@@ -810,8 +810,8 @@ header.header.headerFixed {
 
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
-    font-size: 110px;
-    line-height: 160px;
+    font-size: 100px;
+    line-height: 100px;
     font-weight: normal;
     font-family: "futuraheavy";
     margin-bottom: 10px;
@@ -838,10 +838,13 @@ header.header.headerFixed {
 .hero_warp .banner_content .exp_list li+li {
     padding-left: 35px;
 }
+.hero_warp .banner_content {
+    margin-top: 100px;
+}
 
 .hero_warp .banner_content .exp_list li+li:before {
     position: absolute;
-    content: "/";
+    content: "|";
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
