@@ -206,9 +206,9 @@ button:hover {
 }
 
 .bg_strock_text {
-    font-size: 220px;
+    font-size: 240px;
     color: transparent;
-    font-weight: normal;
+    font-weight:normal;
     font-family: "futuraheavy";
     letter-spacing: 3px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);

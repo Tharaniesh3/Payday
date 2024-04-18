@@ -532,6 +532,12 @@
         font-size: 50px;
         margin-bottom: 5px;
     }
+    .bg_strock_text {
+        font-size: 100px;
+    }
+    .about_wrap .about_content .bg_text .bg_strock_text {
+        font-size: 150px;
+    }
     header.header .navbar .hamburger .bar_icon .bar {
         height: 1px;
     }
@@ -631,6 +637,12 @@
 /* @media (max-width: 640px ) */
 
 @media (max-width: 576px) {
+    .bg_strock_text {
+        font-size: 100px;
+    }
+    .about_wrap .about_content .bg_text .bg_strock_text {
+        font-size: 150px;
+    }
     .capabiliti_wrap .capabiliti_title:before,
     .about_wrap .about_title:before,
     .testimonial_wrap .test_left .test_title:before {
@@ -706,6 +718,12 @@
 /* @media (max-width: 576px ) */
 
 @media (max-width: 440px) {
+    .bg_strock_text {
+        font-size: 100px;
+    }
+    .about_wrap .about_content .bg_text .bg_strock_text {
+        font-size: 150px;
+    }
     .widget .media .media-body .tn_tittle a,
     .hero_warp.inner_banner .banner_content .banner_para {
         font-size: 14px;
