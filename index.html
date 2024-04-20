@@ -124,256 +124,198 @@
 
     <!-- start portfolio_warp -->
     <section class="portfolio_warp" id="portfolio_warp">
-        <div class="port_bg_text">
-            <h1 class="bg_strock_text" data-parallax='{"x": -200}'>SPORTS</h1>
-        </div>
-        <div class="container">
-            <div class="row portfolio_single_wrap">
-                <!-- UFC -->
-                <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
-                    <div class="portfolio_item">
-                        <div class="port_img tilt">
-                            <a><img src="assets/ufc.png" alt="img" class="img-fluid"></a>
-                        </div>
-                        <a class="exp" onclick="togglePopup('ufcPopup', 'nbaPopup', 'UFC')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
-                        <div class="popup" id="ufcPopup">
-                            <span class="popuptext">MIXED MARTIAL ARTS</span>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>MATCH NUMBER</th>
-                                        <th>SPORTS NAME</th>
-                                        <th>CARD NAME</th>
-                                        <th>CARD DATE TIME</th>
-                                        <th>CONTEST PRICE</th>
-                                        <th>CONTEST NAME</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="ufcTableRows">
-                                </tbody>
-                            </table>
-                            <span class="close" onclick="closePopup('ufcPopup')">&times;</span>
-                        </div>
-                        <div class="port_text">
-                            <a>
-                                <h3 class="port_title">MIXED MARTIAL<br>ARTS</h3>
-                            </a>
-                            <p class="catagory">- <a href="#">NEXT UP - A.PEREIRA VS J.HILL</a></p>
-                        </div>
+    <div class="port_bg_text">
+        <h1 class="bg_strock_text" data-parallax='{"x": -200}'>SPORTS</h1>
+    </div>
+    <div class="container">
+        <div class="row portfolio_single_wrap">
+            <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
+                <div class="portfolio_item">
+                    <div class="port_img tilt">
+                        <a><img src="assets/ufc.png" alt="img" class="img-fluid"></a>
+                    </div>
+                    <a class="exp" onclick="togglePopup('ufcPopup', 'nbaPopup')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
+                    <div class="popup" id="ufcPopup">
+                        <span class="popuptext">MIXED MARTIAL ARTS</span>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>CARD NAME</th>
+                                    <th>CARD DATE TIME</th>
+                                    <th>CARD DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ufcTableRows">
+                            </tbody>
+                        </table>
+                        <span class="close" onclick="closePopup('ufcPopup')">&times;</span>
+                    </div>
+                    <div class="port_text">
+                        <a>
+                            <h3 class="port_title">MIXED MARTIAL<br>ARTS</h3>
+                        </a>
+                        <p class="catagory">- <a href="#">NEXT UP - A.PEREIRA VS J.HILL</a></p>
                     </div>
                 </div>
-    
-                <!-- Basketball -->
-                <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
-                    <div class="portfolio_item">
-                        <div class="port_img tilt">
-                            <a><img src="assets/basketball.png" alt="img" class="img-fluid"></a>
-                        </div>
-                        <a class="exp" onclick="togglePopup('nbaPopup', 'ufcPopup', 'BASKETBALL')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
-                        <div class="popup" id="nbaPopup">
-                            <span class="popuptext">BASKETBALL</span>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>MATCH NUMBER</th>
-                                        <th>SPORTS NAME</th>
-                                        <th>CARD NAME</th>
-                                        <th>CARD DATE TIME</th>
-                                        <th>CONTEST PRICE</th>
-                                        <th>CONTEST NAME</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="nbaTableRows">
-                                </tbody>
-                            </table>
-                            <span class="close" onclick="closePopup('nbaPopup')">&times;</span>
-                        </div>
-                        <div class="port_text">
-                            <a>
-                                <h3 class="port_title">BASKETBALL</h3>
-                            </a>
-                            <p class="catagory">- <a href="#">NEXT UP - BOS vs. MIL</a></p>
-                        </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
+                <div class="portfolio_item">
+                    <div class="port_img tilt">
+                        <a><img src="assets/basketball.png" alt="img" class="img-fluid"></a>
+                    </div>
+                    <a class="exp" onclick="togglePopup('nbaPopup', 'ufcPopup')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
+                    <div class="popup" id="nbaPopup">
+                        <span class="popuptext">BASKETBALL</span>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                   
+                                    <th>CARD NAME</th>
+                                    <th>CARD DATE TIME</th>
+                                    <th>CARD DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody id="nbaTableRows">
+                            </tbody>
+                        </table>
+                        <span class="close" onclick="closePopup('nbaPopup')">&times;</span>
+                    </div>
+                    <div class="port_text">
+                        <a>
+                            <h3 class="port_title">BASKETBALL</h3>
+                        </a>
+                        <p class="catagory">- <a href="#">NEXT UP - BOS vs. MIL</a></p>
                     </div>
                 </div>
-    
-                <!-- American Football -->
-                <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
-                    <div class="portfolio_item">
-                        <div class="port_img tilt">
-                            <a><img src="assets/rugby.png" alt="img" class="img-fluid"></a>
-                        </div>
-                        <a class="exp" onclick="togglePopup('americanFootballPopup', 'soccerPopup', 'AMERICAN FOOTBALL')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
-                        <div class="popup" id="americanFootballPopup">
-                            <span class="popuptext">AMERICAN FOOTBALL</span>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>MATCH NUMBER</th>
-                                        <th>SPORTS NAME</th>
-                                        <th>CARD NAME</th>
-                                        <th>CARD DATE TIME</th>
-                                        <th>CONTEST PRICE</th>
-                                        <th>CONTEST NAME</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="americanFootballTableRows">
-                                </tbody>
-                            </table>
-                            <span class="close" onclick="closePopup('americanFootballPopup')">&times;</span>
-                        </div>
-                        <div class="port_text">
-                            <a>
-                                <h3 class="port_title">AMERICAN FOOTBALL</h3>
-                            </a>
-                            <p class="catagory">- <a href="#">COMING SOON!</a></p>
-                        </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
+                <div class="portfolio_item">
+                    <div class="port_img tilt">
+                        <a><img src="assets/rugby.png" alt="img" class="img-fluid"></a>
+                    </div>
+                    <a class="exp"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
+                    <div class="port_text">
+                        <a>
+                            <h3 class="port_title">AMERICAN FOOTBALL</h3>
+                        </a>
+                        <p class="catagory">- <a href="#">COMING SOON!</a></p>
                     </div>
                 </div>
-    
-                <!-- Soccer -->
-                <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
-                    <div class="portfolio_item">
-                        <div class="port_img tilt">
-                            <a><img src="assets/soccer.png" alt="img" class="img-fluid"></a>
-                        </div>
-                        <a class="exp" onclick="togglePopup('soccerPopup', 'americanFootballPopup', 'SOCCER')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
-                        <div class="popup" id="soccerPopup">
-                            <span class="popuptext">SOCCER</span>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>MATCH NUMBER</th>
-                                        <th>SPORTS NAME</th>
-                                        <th>CARD NAME</th>
-                                        <th>CARD DATE TIME</th>
-                                        <th>CONTEST PRICE</th>
-                                        <th>CONTEST NAME</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="soccerTableRows">
-                                </tbody>
-                            </table>
-                            <span class="close" onclick="closePopup('soccerPopup')">&times;</span>
-                        </div>
-                        <div class="port_text">
-                            <a>
-                                <h3 class="port_title">SOCCER</h3>
-                            </a>
-                            <p class="catagory">- <a href="#">COMING SOON!</a></p>
-                        </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
+                <div class="portfolio_item">
+                    <div class="port_img tilt">
+                        <a><img src="assets/soccer.png" alt="img" class="img-fluid"></a>
+                    </div>
+                    <a class="exp"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
+                    <div class="port_text">
+                        <a>
+                            <h3 class="port_title">SOCCER</h3>
+                        </a>
+                        <p class="catagory">- <a href="#">COMING SOON!</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    
-    <style>
-        .popup {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 8px 20px;
-            z-index: 1;
-            display: none;
+    </div>
+</section>
+
+<style>
+    .popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 20px;
+        z-index: 1;
+        display: none;
+    }
+
+    .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #555 transparent;
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .popup.show {
+        display: block;
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+    .popup .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .popup .close:hover {
+        color: #bbb;
+    }
+</style>
+
+<script>
+    function togglePopup(openPopupId, closePopupId) {
+        var openPopup = document.getElementById(openPopupId);
+        var closePopup = document.getElementById(closePopupId);
+        if (openPopup.classList.contains("show")) {
+            closePopup(closePopupId);
         }
-    
-        .popup .popuptext::after {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: transparent transparent #555 transparent;
-        }
-    
-        @-webkit-keyframes fadeIn {
-            from {opacity: 0;}
-            to {opacity: 1;}
-        }
-    
-        @keyframes fadeIn {
-            from {opacity: 0;}
-            to {opacity: 1;}
-        }
-    
-        .popup.show {
-            display: block;
-            visibility: visible;
-            -webkit-animation: fadeIn 1s;
-            animation: fadeIn 1s;
-        }
-    
-        .popup .close {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            color: #fff;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-    
-        .popup .close:hover {
-            color: #bbb;
-        }
-    </style>
-    
-    <script>
-        function togglePopup(openPopupId, closePopupId, sport) {
-            var openPopup = document.getElementById(openPopupId);
-            var closePopup = document.getElementById(closePopupId);
-    
-            if (openPopup.classList.contains("show")) {
-                closePopup(closePopupId);
-            }
-    
-            openPopup.classList.toggle("show");
-    
-            if (sport) {
-                // Define the API URL based on the sport
-                let apiUrl = "";
-                if (sport === 'UFC') {
-                    apiUrl = "https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb?tag=UFC";
-                } else if (sport === 'BASKETBALL') {
-                    apiUrl = "https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb?tag=NBA";
-                } else if (sport === 'AMERICAN FOOTBALL') {
-                    apiUrl = "https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb?tag=AMERICAN%20FOOTBALL";
-                } else if (sport === 'SOCCER') {
-                    apiUrl = "https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb?tag=SOCCER";
-                }
-    
-                fetch(apiUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log("Received data:", data);
-                        let rows = '';
-                        data.documents.forEach(document => {
-                            rows += `<tr><td>${document.MATCH_NUMBER}</td><td>${document.SPORTS_NAME}</td><td>${document.CARD_NAME}</td><td>${document.CARD_DATE_TIME}</td><td>${document.CONTEST_PRICE}</td><td>${document.CONTEST_NAME}</td></tr>`;
-                        });
-                        console.log("Rows:", rows);
-                        document.getElementById(openPopupId + 'TableRows').innerHTML = rows;
-                    })
-                    .catch(error => console.error("Fetch error:", error));
-            }
-        }
-    
-        function closePopup(popupId) {
-            var popup = document.getElementById(popupId);
-            popup.classList.remove("show");
-        }
-    </script>
-    
-    
-    
+        openPopup.classList.toggle("show");
+    }
+
+    function closePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.classList.remove("show");
+    }
+
+    fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
+    .then(response => response.json())
+    .then(data => {
+        console.log("Received data:", data);
+        const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
+        let ufcRows = '';
+        ufcEvents.forEach(document => {
+            ufcRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CONTEST_PRICE || "N/A"}</td><td>${document.CONTEST_NAME || "N/A"}</td></tr>`;
+        });
+        console.log("UFC Rows:", ufcRows);
+        document.getElementById('ufcTableRows').innerHTML = ufcRows;
+
+        const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
+        let nbaRows = '';
+        nbaEvents.forEach(document => {
+            nbaRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CONTEST_PRICE || "N/A"}</td><td>${document.CONTEST_NAME || "N/A"}</td></tr>`;
+        });
+        console.log("NBA Rows:", nbaRows);
+        document.getElementById('nbaTableRows').innerHTML = nbaRows;
+    })
+    .catch(error => console.error("Fetch error:", error));
+
+</script>
     <!-- end portfolio_warp -->
 
     <!-- start about_wrap -->

@@ -13,3 +13,42 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+  <!-- Basketball -->
+  <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
+    <div class="portfolio_item">
+        <div class="port_img tilt">
+            <a><img src="assets/basketball.png" alt="img" class="img-fluid"></a>
+        </div>
+        <a class="exp" onclick="togglePopup('nbaPopup', 'ufcPopup', 'BASKETBALL')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
+        <div class="popup" id="nbaPopup">
+            <span class="popuptext">BASKETBALL</span>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>MATCH NUMBER</th>
+                        <th>SPORTS NAME</th>
+                        <th>CARD NAME</th>
+                        <th>CARD DATE TIME</th>
+                        <th>CONTEST PRICE</th>
+                        <th>CONTEST NAME</th>
+                    </tr>
+                </thead>
+                <tbody id="nbaTableRows">
+                </tbody>
+            </table>
+            <span class="close" onclick="closePopup('nbaPopup')">&times;</span>
+        </div>
+        <div class="port_text">
+            <a>
+                <h3 class="port_title">BASKETBALL</h3>
+            </a>
+            <p class="catagory">- <a href="#">NEXT UP - BOS vs. MIL</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- American Football -->
