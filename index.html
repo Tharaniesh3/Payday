@@ -300,7 +300,7 @@
         const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
         let ufcRows = '';
         ufcEvents.forEach(document => {
-            ufcRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CONTEST_PRICE || "N/A"}</td><td>${document.CONTEST_NAME || "N/A"}</td></tr>`;
+            ufcRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CARD_DESCRIPTION || "N/A"}</td>  </tr>`;
         });
         console.log("UFC Rows:", ufcRows);
         document.getElementById('ufcTableRows').innerHTML = ufcRows;
@@ -308,7 +308,7 @@
         const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
         let nbaRows = '';
         nbaEvents.forEach(document => {
-            nbaRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CONTEST_PRICE || "N/A"}</td><td>${document.CONTEST_NAME || "N/A"}</td></tr>`;
+            nbaRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CARD_DESCRIPTION || "N/A"}</td>  </tr>`;
         });
         console.log("NBA Rows:", nbaRows);
         document.getElementById('nbaTableRows').innerHTML = nbaRows;
