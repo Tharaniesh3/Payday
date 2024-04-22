@@ -292,8 +292,8 @@
         var popup = document.getElementById(popupId);
         popup.classList.remove("show");
     }
-
-    fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
+    
+    fetch("https://cors-anywhere.herokuapp.com/https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
     .then(response => response.json())
     .then(data => {
         console.log("Received data:", data);
