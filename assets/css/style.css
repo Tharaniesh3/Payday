@@ -213,6 +213,7 @@ button:hover {
     letter-spacing: 3px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
     line-height: 220px;
+
 }
 
 .go_to_top {
@@ -1089,12 +1090,14 @@ header.header.headerFixed {
 }
 
 .portfolio_item {
+    margin-top: 60px;
     position: relative;
     margin-bottom: 150px;
     z-index: 10;
 }
 
 .portfolio_item .port_img a {
+    
     position: relative;
     display: inline-block;
     width: 100%;
@@ -1217,6 +1220,7 @@ header.header.headerFixed {
 
 .portfolio_item .exp span.exp_hover {
     padding: 5px 20px;
+    color: #fff;
 }
 
 .portfolio_item .exp span.exp_inner:before,
@@ -1517,12 +1521,11 @@ header.header.headerFixed {
 }
 
 .capabiliti_wrap .capabiliti_tab_content .tab-pane .tabPara {
-    color: #848892;
+    color: #fff;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
-    margin-bottom: 72px;
     padding-right: 15px;
 }
 
@@ -2721,6 +2724,7 @@ header.header.headerFixed {
 
 .footer .footer_contact {
     margin-bottom: 45px;
+    letter-spacing: 2px;
 }
 
 .footer .footer_contact li {
