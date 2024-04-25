@@ -517,6 +517,9 @@
 /* @media (max-width: 767px ) */
 
 @media (max-width: 767px) and (min-width: 640px) {
+    .hero_warp .banner_content .banner_title {
+        margin-top: 90%;
+    }
     .banner_content {
         padding-top: 40px;
     }
@@ -528,6 +531,9 @@
 /* @media (max-width: 767px ) */
 
 @media (max-width: 640px) {
+    .hero_warp .banner_content .banner_title {
+        margin-top: 90%;
+    }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 50px;
         margin-bottom: 5px;
