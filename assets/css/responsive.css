@@ -724,6 +724,9 @@
 /* @media (max-width: 576px ) */
 
 @media (max-width: 440px) {
+    .hero_warp .banner_content .banner_title {
+        font-size: 45px;
+    }
     .bg_strock_text {
         font-size: 80px;
     }
