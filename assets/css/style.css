@@ -206,14 +206,11 @@ button:hover {
 }
 
 .bg_strock_text {
-    font-size: 240px;
+    font-size: 120px;
     color: transparent;
     font-weight:normal;
     font-family: "futuraheavy";
-    letter-spacing: 3px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
-    line-height: 220px;
-
 }
 
 .go_to_top {
@@ -684,19 +681,19 @@ header.header.headerFixed {
 }
 
 .about_wrap .about_content .bg_text {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .about_wrap .about_content .bg_text .bg_strock_text {
     font-weight: normal;
-    font-size: 350px;
+    font-size: 150px;
+    margin-left: 255px;
     font-family: "futuraheavy";
     text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
     letter-spacing: 10px;
-    line-height: 290px;
 }
 
 .about_wrap .about_content h4 {
@@ -812,7 +809,6 @@ header.header.headerFixed {
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
     font-size: 100px;
-    line-height: 100px;
     font-weight: normal;
     font-family: "futuraheavy";
     margin-bottom: 10px;
@@ -941,7 +937,6 @@ header.header.headerFixed {
 
 .hero_warp.inner_banner .banner_content .banner_title {
     font-size: 80px;
-    line-height: 80px;
     margin-bottom: 0;
 }
 
@@ -1466,7 +1461,6 @@ header.header.headerFixed {
 
 .capabiliti_wrap .bg_text {
     position: absolute;
-    left: 255px;
     top: 60px;
 }
 

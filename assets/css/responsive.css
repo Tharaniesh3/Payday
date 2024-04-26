@@ -137,7 +137,6 @@
     }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 28px;
-        line-height: 35px;
         margin-bottom: 0;
     }
     .hero_warp.inner_banner .banner_content .banner_para {
@@ -317,7 +316,6 @@
     }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 36px;
-        line-height: 40px;
     }
     .hero_warp.inner_banner .banner_content .banner_para {
         font-size: 16px;
@@ -454,7 +452,6 @@
 @media (max-width: 990px){
     .hero_warp .banner_content .banner_title {
         font-size: 70px;
-        line-height: 85px;
     }
     .portfolio_item .exp {
         right: -80px;
@@ -463,7 +460,6 @@
 @media (max-width: 990px) and (min-width: 800px) {
     .hero_warp .banner_content .banner_title {
         font-size: 100px;
-        line-height: 85px;
     }
     .portfolio_item .exp {
         right: -80px;
@@ -475,7 +471,6 @@
 @media (max-width: 767px) {
     .hero_warp .banner_content .banner_title {
         font-size: 50px;
-        line-height: 85px;
     }
     .hero_warp .banner_content .banner_title br {
         display: none;
@@ -507,7 +502,6 @@
     }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 28px;
-        line-height: 30px;
     }
     header.header .navbar .select_lang a {
         font-size: 16px;
@@ -647,7 +641,7 @@
         font-size: 100px;
     }
     .about_wrap .about_content .bg_text .bg_strock_text {
-        font-size: 150px;
+        font-size: 100px;
     }
     .capabiliti_wrap .capabiliti_title:before,
     .about_wrap .about_title:before,
@@ -731,7 +725,7 @@
         font-size: 80px;
     }
     .about_wrap .about_content .bg_text .bg_strock_text {
-        font-size: 150px;
+        font-size: 80px;
     }
     .widget .media .media-body .tn_tittle a,
     .hero_warp.inner_banner .banner_content .banner_para {
