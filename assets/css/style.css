@@ -26,10 +26,6 @@ This file contains the styling for the actual tempalte, this is the file you nee
 .dark {
     color: #1b1d22;
 }
-html, body {
-    touch-action: manipulation;
-    -ms-touch-action: manipulation;
-}
 h1,
 h2,
 h3,
