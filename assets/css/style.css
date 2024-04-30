@@ -206,11 +206,16 @@ button:hover {
 }
 
 .bg_strock_text {
-    font-size: 120px;
+    font-size: 240px;
+    margin-top: 50px;
     color: transparent;
     font-weight:normal;
     font-family: "futuraheavy";
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    letter-spacing: 3px;
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.2);
+    line-height: 220px;
+    
+
 }
 
 .go_to_top {
@@ -647,10 +652,10 @@ header.header.headerFixed {
 /* start about_wrap */
 
 .about_wrap {
-    padding: 240px 0;
+    padding: 120px 0 0 0;
     background: #000;
     position: relative;
-    z-index: 10;
+    z-index: 10000;
 }
 
 .about_wrap .about_title {
@@ -677,25 +682,40 @@ header.header.headerFixed {
 .about_wrap .about_content {
     position: relative;
     z-index: 1;
-    padding-left: 215px;
 }
 
-.about_wrap .about_content .bg_text {
-    position: relative;
+.about_wrap .bg_text {
+    position: absolute;
+    margin-top: 50px;
+
+    left: 215px;
     top: 0;
-    left: 0;
-    z-index: 1;
+
 }
 
-.about_wrap .about_content .bg_text .bg_strock_text {
+.about_wrap  .bg_text .bg_strock_text {
     font-weight: normal;
-    font-size: 150px;
-    margin-left: 255px;
+    font-size: 350px;
     font-family: "futuraheavy";
     text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
     letter-spacing: 10px;
 }
+.bg_strock_text_about {
+    font-size: 240px;
+    color: transparent;
+    padding-bottom: 50px;
+    font-weight:800;
+    font-family: "futuraheavy";
+    letter-spacing: 3px;
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.2);
+    line-height: 220px;
 
+}
+
+.about_wrap .about_content{
+    margin-top: 120px;
+
+}
 .about_wrap .about_content h4 {
     color: #171819;
     font-family: "Poppins", sans-serif;
@@ -1461,7 +1481,11 @@ header.header.headerFixed {
 
 .capabiliti_wrap .bg_text {
     position: absolute;
-    top: 60px;
+    left: 215px;
+    top: 20px;
+}
+.capabiliti_wrap .container{
+    margin-top: 80px;
 }
 
 .capabiliti_wrap .capabiliti_title {
@@ -1510,6 +1534,7 @@ header.header.headerFixed {
 .capabiliti_wrap .capabiliti_tab li a.active,
 .capabiliti_wrap .capabiliti_tab li a:hover {
     color: #fff;
+    
     background: none;
     border: none;
 }
