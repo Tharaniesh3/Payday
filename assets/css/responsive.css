@@ -126,7 +126,15 @@
 /* @media (max-width: 1024px ) */
 
 @media (max-width: 991px) {
-    
+    .about_wrap .about_content {
+        padding-left: 60px;
+    }
+    .about_wrap .about_content h4 br {
+        display: none;
+    }
+    .about_wrap {
+        padding: 100px 0;
+    }
     .portfolio_warp {
         padding-top: 75px;
     }
