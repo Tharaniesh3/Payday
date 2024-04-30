@@ -687,13 +687,13 @@ header.header.headerFixed {
 .about_wrap .bg_text {
     position: absolute;
     margin-top: 50px;
-
     left: 215px;
     top: 0;
 
 }
 
 .about_wrap  .bg_text .bg_strock_text {
+    white-space: nowrap;
     font-weight: normal;
     font-size: 350px;
     font-family: "futuraheavy";
@@ -709,6 +709,8 @@ header.header.headerFixed {
     letter-spacing: 3px;
     -webkit-text-stroke: 3px rgba(255, 255, 255, 0.2);
     line-height: 220px;
+    white-space: nowrap;
+
 
 }
 
