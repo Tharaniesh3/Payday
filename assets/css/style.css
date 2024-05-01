@@ -61,6 +61,7 @@ a {
 .hover-color:hover {
     color: rgba(23, 24, 25, 0.6);
 }
+
 a:hover {
     color: rgba(23, 24, 25, 0.6);
     text-decoration: none;
@@ -685,12 +686,13 @@ header.header.headerFixed {
 .about_wrap .bg_text {
     position: absolute;
     margin-top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 215px;
     top: 0;
-    width: 80%;
-    max-width: calc(100% - 430px);
-
+}
+.bg_text {
+    padding: 50px;
+    max-width: 70%;
+    margin: auto;
 }
 
 .about_wrap  .bg_text .bg_strock_text {
@@ -1070,11 +1072,8 @@ header.header.headerFixed {
 
 .portfolio_warp .port_bg_text {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 215px;
     top: 0;
-    width: 80%;
-    max-width: calc(100% - 430px);
 }
 
 .portfolio_warp.portfolio_3_warp .container-fluid {
@@ -1489,6 +1488,7 @@ header.header.headerFixed {
     position: absolute;
     left: 215px;
     top: 20px;
+
 }
 .capabiliti_wrap .container{
     margin-top: 80px;
