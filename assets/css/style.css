@@ -685,8 +685,11 @@ header.header.headerFixed {
 .about_wrap .bg_text {
     position: absolute;
     margin-top: 50px;
-    left: 215px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
+    width: 80%;
+    max-width: calc(100% - 430px);
 
 }
 
@@ -1067,8 +1070,11 @@ header.header.headerFixed {
 
 .portfolio_warp .port_bg_text {
     position: absolute;
-    left: 215px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
+    width: 80%;
+    max-width: calc(100% - 430px);
 }
 
 .portfolio_warp.portfolio_3_warp .container-fluid {
