@@ -208,11 +208,11 @@ button:hover {
     font-size: 240px;
     margin-top: 50px;
     color: transparent;
-    font-weight:normal;
     font-family: "futuraheavy";
-    letter-spacing: 3px;
     -webkit-text-stroke: 3px rgba(255, 255, 255, 0.2);
     line-height: 220px;
+    white-space: nowrap;
+
     
 
 }
@@ -686,33 +686,7 @@ header.header.headerFixed {
 .about_wrap .bg_text {
     position: absolute;
     margin-top: 50px;
-    margin: auto;
     top: 0;
-}
-.bg_text {
-    overflow: hidden;
-}
-
-
-.about_wrap  .bg_text .bg_strock_text {
-    white-space: nowrap;
-    font-weight: normal;
-    font-size: 350px;
-    font-family: "futuraheavy";
-    text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
-    letter-spacing: 10px;
-}
-.bg_strock_text_about {
-    font-size: 240px;
-    color: transparent;
-    padding-bottom: 50px;
-    font-family: "futuraheavy";
-    letter-spacing: 3px;
-    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.2);
-    line-height: 220px;
-    white-space: nowrap;
-
-
 }
 
 .about_wrap .about_content{

@@ -183,11 +183,10 @@
     .testimonial_wrap .test_left .test_title br {
         display: none;
     }
-    .bg_strock_text_about {
+    .bg_strock_text{
         font-size: 120px;
         margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
+
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
     .about_wrap .container .about_content{
@@ -198,8 +197,6 @@
     }
     .bg_strock_text {
         font-size: 120px;
-        margin-left: 10vw;
-        width: 90vw;
         margin-top: -10px;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -371,11 +368,10 @@
     .somethings_interesting_wrap .title {
         font-size: 36px;
     }
-    .bg_strock_text_about {
+    .bg_strock_text{
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
+
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
     .about_wrap .container .about_content{
@@ -387,8 +383,7 @@
     .bg_strock_text {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
+
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
     
@@ -575,11 +570,10 @@
         font-size: 50px;
         margin-bottom: 5px;
     }
-    .bg_strock_text_about {
+    .bg_strock_text{
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
+
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
     .about_wrap .container .about_content{
@@ -591,8 +585,7 @@
     .bg_strock_text {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
+
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
     
@@ -698,11 +691,10 @@
 /* @media (max-width: 640px ) */
 
 @media (max-width: 576px) {
-    .bg_strock_text_about {
+    .bg_strock_text{
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
+
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
     .about_wrap .container .about_content{
@@ -714,8 +706,7 @@
     .bg_strock_text {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
+
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
 
@@ -798,11 +789,8 @@
     .hero_warp .banner_content .banner_title {
         font-size: 45px;
     }
-    .bg_strock_text_about {
+    .bg_strock_text{
         font-size: 70px;
-        margin-top: -10px;
-        margin-left: 10vw;
-        width: 90vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
     .about_wrap .container .about_content{
@@ -814,10 +802,8 @@
 
     }
     .bg_strock_text {
-        font-size: 80px;
+        font-size: 70px;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
-        margin-left: 10vw;
-        width: 90vw;
     }
 
     .widget .media .media-body .tn_tittle a,
