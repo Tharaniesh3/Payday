@@ -1045,6 +1045,8 @@ header.header.headerFixed {
 .portfolio_warp .port_bg_text {
     position: absolute;
     top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .portfolio_warp.portfolio_3_warp .container-fluid {
@@ -1459,6 +1461,10 @@ header.header.headerFixed {
     position: absolute;
     top: 20px;
 
+}
+.bg_text{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .capabiliti_wrap .container{
     margin-top: 80px;
