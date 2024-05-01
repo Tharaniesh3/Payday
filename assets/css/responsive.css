@@ -691,6 +691,7 @@
         margin-top: -10px;
         margin-left: 225px;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
+        overflow: hidden;
     }
     .about_wrap .container .about_content{
         margin-top: 70px;
