@@ -686,14 +686,14 @@ header.header.headerFixed {
 .about_wrap .bg_text {
     position: absolute;
     margin-top: 50px;
-    left: 215px;
+    margin: auto;
     top: 0;
 }
 .bg_text {
     padding: 50px;
-    max-width: 70%;
     margin: auto;
 }
+
 
 .about_wrap  .bg_text .bg_strock_text {
     white-space: nowrap;
