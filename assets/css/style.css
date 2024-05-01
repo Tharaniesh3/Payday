@@ -61,7 +61,9 @@ a {
 .hover-color:hover {
     color: rgba(23, 24, 25, 0.6);
 }
-
+body {
+    touch-action: pan-x pan-y;
+  }
 a:hover {
     color: rgba(23, 24, 25, 0.6);
     text-decoration: none;
