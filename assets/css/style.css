@@ -691,7 +691,6 @@ header.header.headerFixed {
 }
 .bg_text {
     overflow: hidden;
-    margin: 80%;
 }
 
 
@@ -1072,7 +1071,6 @@ header.header.headerFixed {
 
 .portfolio_warp .port_bg_text {
     position: absolute;
-    left: 215px;
     top: 0;
 }
 
@@ -1486,7 +1484,6 @@ header.header.headerFixed {
 
 .capabiliti_wrap .bg_text {
     position: absolute;
-    left: 215px;
     top: 20px;
 
 }
