@@ -315,7 +315,26 @@
         console.log("NBA Rows:", nbaRows);
         document.getElementById('nbaTableRows').innerHTML = nbaRows;
     })
- 
+    function isIOS() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      }
+      
+      if (isIOS()) {
+        document.documentElement.addEventListener('touchstart', function(event) {
+          if (event.touches.length > 1) {
+            event.preventDefault();
+          }
+        }, false);
+      
+        var lastTouchEnd = 0;
+        document.documentElement.addEventListener('touchend', function(event) {
+          var now = new Date().getTime();
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+          }
+          lastTouchEnd = now;
+        }, false);
+      }
 </script>
     <!-- end portfolio_warp -->
 
