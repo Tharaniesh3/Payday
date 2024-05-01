@@ -690,8 +690,8 @@ header.header.headerFixed {
     top: 0;
 }
 .bg_text {
-    padding: 50px;
-    margin: auto;
+    overflow: hidden;
+    margin: 80%;
 }
 
 

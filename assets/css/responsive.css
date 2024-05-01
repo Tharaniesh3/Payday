@@ -791,7 +791,9 @@
     }
     .about_wrap .bg_text{
         margin-top: 0px;
-        overflow: hidden;
+        margin-left: 1%;
+        margin-right: 1%;
+
     }
     .bg_strock_text {
         font-size: 80px;
