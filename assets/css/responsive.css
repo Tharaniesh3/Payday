@@ -186,7 +186,7 @@
     .bg_strock_text_about {
         font-size: 120px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -198,7 +198,7 @@
     }
     .bg_strock_text {
         font-size: 120px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         margin-top: -10px;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
@@ -374,7 +374,7 @@
     .bg_strock_text_about {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -387,7 +387,7 @@
     .bg_strock_text {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -578,7 +578,7 @@
     .bg_strock_text_about {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -591,7 +591,7 @@
     .bg_strock_text {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -701,7 +701,7 @@
     .bg_strock_text_about {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -714,7 +714,7 @@
     .bg_strock_text {
         font-size: 100px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -801,7 +801,7 @@
     .bg_strock_text_about {
         font-size: 70px;
         margin-top: -10px;
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
     }
@@ -816,7 +816,7 @@
     .bg_strock_text {
         font-size: 80px;
         -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
-        margin-left: 20%;
+        margin-left: 10%;
         width: 100vw;
     }
 
