@@ -19,7 +19,7 @@
             min-height: 100vh;
         }
 
-        main {
+        .main {
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@
         }
 
         @media screen and (max-width: 768px) {
-            main {
+            .main {
                 width: 90%;
             }
         }
@@ -62,7 +62,17 @@
 </head>
 <body>
     <div class="main">
-        <button onclick="history.back()">Go Back</button>
+        <img onclick="history.back()" style="
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;" src="assets\Logo.png"></img>
         <h1>About Payday Fantasybook</h1>
         <p>Welcome to the realm of ultimate fantasy gaming – Payday Fantasybook. Immerse yourself in the magic of strategic gameplay and unparalleled excitement.</p>
         
@@ -88,48 +98,3 @@
     </div>
 </body>
 </html>
-
-
-<!-- 
-<div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus wow fadeInUp">
-    <div class="portfolio_item">
-        <div class="port_img tilt">
-            <a href="portfolio-single.html"><img src="assets/basketball.png" alt="img" class="img-fluid"></a>
-        </div>
-        <a class="exp" href="portfolio-single.html"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
-        <div class="port_text">
-            <a href="portfolio-single.html">
-                <h3 class="port_title">BASKETBALL</h3>
-            </a>
-            <p class="catagory">- <a href="#">NEXT UP - NY.KNICKS VS GS.WARRIORS</a></p>
-        </div>
-    </div>
-</div>
-<div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item portfolio_cus wow fadeInUp">
-    <div class="portfolio_item">
-        <div class="port_img tilt">
-            <a href="portfolio-single.html"><img src="assets/soccer.png" alt="img" class="img-fluid"></a>
-        </div>
-        <a class="exp" href="portfolio-single.html"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
-        <div class="port_text">
-            <a href="portfolio-single.html">
-                <h3 class="port_title">SOCCER</h3>
-            </a>
-            <p class="catagory">- <a href="#"> COMING SOON!</a></p>
-        </div>
-    </div>
-</div>
-<div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
-    <div class="portfolio_item">
-        <div class="port_img tilt">
-            <a href="portfolio-single.html"><img src="assets/rugby.png" alt="img" class="img-fluid"></a>
-        </div>
-        <a class="exp" href="portfolio-single.html"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
-        <div class="port_text">
-            <a href="portfolio-single.html">
-                <h3 class="port_title">AMERICAN<br>FOOTBALL</h3>
-            </a>
-            <p class="catagory">- <a href="#">COMING SOON!</a></p>
-        </div>
-    </div>
-</div> -->
