@@ -1046,13 +1046,18 @@ header.header.headerFixed {
     position: absolute;
     top: 0;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .portfolio_warp.portfolio_3_warp .container-fluid {
     width: 85%;
 }
-
+.about_wrap.about_3_warp .container .about_content {
+    width: 85%;
+}
+.portfolio_warp .container {
+    width: 100%;
+}
 @media (min-width: 1024px) {
     .portfolio_single_wrap {
         margin-left: -14%;
