@@ -69,9 +69,6 @@
                                     <li class="submenu">
                                         <a href="https://tharaniesh3.github.io/Payday/assets/about_us.html">ABOUT US</a>
                                     </li>
-                                    <li class="submenu">
-                                        <a href="#">CONTACT US</a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -138,9 +135,6 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <!-- <th></th>
-                                    <th></th>
-                                    <th></th> -->
                                 </tr>
                             </thead>
                             <tbody id="ufcTableRows">
@@ -218,104 +212,6 @@
     </div>
 </center>
 </section>
-
-<style>
-    .popup {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px 20px;
-        z-index: 1;
-        display: none;
-    }
-
-    .popup .popuptext::after {
-        content: "";
-        position: absolute;
-        top: -10px;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent #555 transparent;
-    }
-
-    @-webkit-keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
-
-    @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
-
-    .popup.show {
-        display: block;
-        visibility: visible;
-        -webkit-animation: fadeIn 1s;
-        animation: fadeIn 1s;
-    }
-
-    .popup .close {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        color: #fff;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .popup .close:hover {
-        color: #bbb;
-    }
-</style>
-
-<script>
-    function togglePopup(openPopupId, closePopupId) {
-        var openPopup = document.getElementById(openPopupId);
-        var closePopup = document.getElementById(closePopupId);
-                var openPopups = document.querySelectorAll('.popup.show');
-        openPopups.forEach(function(popup) {
-            popup.classList.remove('show');
-        });
-            openPopup.classList.toggle("show");
-    }
-    
-    function closePopup(popupId) {
-        var popup = document.getElementById(popupId);
-        popup.classList.remove("show");
-    }
-    
-    
-    fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
-    .then(response => response.json())
-    .then(data => {
-        console.log("Received data:", data);
-        const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
-        let ufcRows = '';
-        ufcEvents.forEach(document => {
-            ufcRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CARD_DESCRIPTION || "N/A"}</td>  </tr>`;
-        });
-        console.log("UFC Rows:", ufcRows);
-        document.getElementById('ufcTableRows').innerHTML = ufcRows;
-
-        const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
-        let nbaRows = '';
-        nbaEvents.forEach(document => {
-            nbaRows += `<tr><td>${document.CARD_NAME || document.MATCH_NAME}</td><td>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</td><td>${document.CARD_DESCRIPTION || "N/A"}</td>  </tr>`;
-        });
-        console.log("NBA Rows:", nbaRows);
-        document.getElementById('nbaTableRows').innerHTML = nbaRows;
-    })
-
-</script>
     <!-- end portfolio_warp -->
 
     <!-- start about_wrap -->
@@ -330,13 +226,14 @@
                         <div class="row justify-content-center">
                             <div class="col-md-3">
                                 <img src="assets\selectmatch.png" class="img-fluid" alt="Image 1">
-                            </div>
-                            <div class="col-md-3">
+                        </div>
+                        <div class="col-md-3">
                                 <img src="assets\createteam.png" class="img-fluid" alt="Image 2">
-                            </div>
+                        </div>
                             <div class="col-md-3">
                                 <img src="assets\\joincontests.png" class="img-fluid" alt="Image 3">
-                            </div>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -494,6 +391,7 @@
     <script src="assets/js/parallax-scroll.js"></script>
     <script src="assets/js/universal-tilt.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
 
 
 </body>

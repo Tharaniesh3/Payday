@@ -1,16 +1,18 @@
 function togglePopup(openPopupId, closePopupId) {
   var openPopup = document.getElementById(openPopupId);
   var closePopup = document.getElementById(closePopupId);
-  if (openPopup.classList.contains("show")) {
-      closePopup(closePopupId);
-  }
-  openPopup.classList.toggle("show");
+          var openPopups = document.querySelectorAll('.popup.show');
+  openPopups.forEach(function(popup) {
+      popup.classList.remove('show');
+  });
+      openPopup.classList.toggle("show");
 }
 
 function closePopup(popupId) {
   var popup = document.getElementById(popupId);
   popup.classList.remove("show");
 }
+
 
 fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
 .then(response => response.json())
@@ -32,4 +34,3 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   console.log("NBA Rows:", nbaRows);
   document.getElementById('nbaTableRows').innerHTML = nbaRows;
 })
-.catch(error => console.error("Fetch error:", error));

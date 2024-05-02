@@ -1048,6 +1048,63 @@ header.header.headerFixed {
     padding-left: 15px;
     padding-left: 15px;
 }
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 20px;
+    z-index: 1;
+    display: none;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.popup.show {
+    display: block;
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup .close:hover {
+    color: #bbb;
+}
+
+
 
 .portfolio_warp.portfolio_3_warp .container-fluid {
     width: 85%;
@@ -1093,7 +1150,10 @@ header.header.headerFixed {
     margin-bottom: 150px;
     z-index: 10;
 }
+img {
+    border-radius: 10px;
 
+  }
 .portfolio_item .port_img a {
     
     position: relative;
