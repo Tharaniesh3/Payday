@@ -34,3 +34,8 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   console.log("NBA Rows:", nbaRows);
   document.getElementById('nbaTableRows').innerHTML = nbaRows;
 })
+
+
+function scrollToAnswer(tabId) {
+  document.getElementById(tabId).scrollIntoView({ behavior: 'smooth' });
+}
