@@ -19,12 +19,11 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
   let ufcRows = '';
   ufcEvents.forEach(document => {
-    ufcRows += `<div class="fancy">`;
+    ufcRows +=`<hr>`;
     ufcRows += `<div>${document.MATCH_NUMBER}</div>`;
-    ufcRows += `<div>${document.CARD_NAME || document.MATCH_NAME}</div>`;
-    ufcRows += `<div>${document.CARD_DESCRIPTION || "N/A"}</div>`;
-    ufcRows += `<div>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</div>`;
-    ufcRows += `</div>`;
+    ufcRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
+    ufcRows += `<h6>${document.CARD_DESCRIPTION || "N/A"}</h6>`;
+    ufcRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p>`;
   });
   console.log("UFC Rows:", ufcRows);
   document.getElementById('ufcTableRows').innerHTML = ufcRows;
@@ -32,12 +31,11 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
   let nbaRows = '';
   nbaEvents.forEach(document => {
-    nbaRows += `<div class="fancy">`;
-    nbaRows += `<div>${document.MATCH_NUMBER}</div>`;
-    nbaRows += `<div>${document.CARD_NAME || document.MATCH_NAME}</div>`;
-    nbaRows += `<div>${document.CARD_DESCRIPTION || "N/A"}</div>`;
-    nbaRows += `<div>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</div>`;
-    nbaRows += `</div>`;
+    nbaRows +=`<hr>`;
+    nbaRows += `<div class="nba-event">${document.MATCH_NUMBER}</div>`; // Separate column for Match Number
+    nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
+    nbaRows += `<h6>${document.CARD_DESCRIPTION || "N/A"}</h6>`;
+    nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p>`;
   });
   console.log("NBA Rows:", nbaRows);
   document.getElementById('nbaTableRows').innerHTML = nbaRows;

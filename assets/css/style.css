@@ -1072,61 +1072,6 @@ header.header.headerFixed {
     padding-left: 15px;
     padding-left: 15px;
 }
-.popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 20px;
-    z-index: 1;
-    display: none;
-}
-
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #555 transparent;
-}
-
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.popup.show {
-    display: block;
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-.popup .close {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.popup .close:hover {
-    color: #bbb;
-}
 
 
 
@@ -2930,19 +2875,30 @@ img {
 .capabiliti_wrap .capabiliti_tab_content .fade {
     transition: opacity 1s linear;
 }
-
 .popup {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 70%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
     color: #fff;
-    text-align: center;
+    text-align: left;
     border-radius: 6px;
-    padding: 8px 20px;
-    z-index: 1;
+    padding: 10px 10px;
+    z-index: 300;
     display: none;
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 4; /* Set a higher z-index to ensure it's above the popup */
 }
 
 .popup .popuptext::after {
@@ -2973,76 +2929,10 @@ img {
     animation: fadeIn 1s;
 }
 
-.popup .close {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .popup .close:hover {
     color: #bbb;
 }
-
-
-table {
-    border-collapse: collapse;
-    width: 100%;
+hr {
+    color: white;
+    border-top: 1px solid;
   }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-.fancy {
-    background-color: #000;
-    --offset: 1px;
-    opacity: 50%;
-    border-radius: 10px;
-    position: relative;
-    width: 25vw;
-    max-width: 100%;
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-  
-  .fancy::before { 
-    content: '';
-    background: conic-gradient(transparent 270deg, white, transparent);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    aspect-ratio: 1;
-    width: 100%;
-    animation: rotate 2s linear infinite;
-    
-  }
-
-  .fancy::after {
-    content: '';
-    background: inherit;
-    border-radius: inherit;
-    position: absolute;
-    inset: var(--offset);
-    height: calc(100% - 2 * var(--offset));
-    width: calc(100% - 2 * var(--offset));
-  }
-  
-
-  
-  @keyframes rotate {
-    from {
-      transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
-    }
-  
-    to {
-      transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
-    }
-  }
-  
