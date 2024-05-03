@@ -1,9 +1,13 @@
 function togglePopup(openPopupId, closePopupId) {
   var openPopup = document.getElementById(openPopupId);
   var closePopup = document.getElementById(closePopupId);
-  if (openPopup.classList.contains("show")) {
-      closePopup(closePopupId);
+  
+  // Close the currently open popup
+  if (closePopup.classList.contains("show")) {
+    closePopup.classList.remove("show");
   }
+  
+  // Toggle the display of the target popup
   openPopup.classList.toggle("show");
 }
 
@@ -20,10 +24,10 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   let ufcRows = '';
   ufcEvents.forEach(document => {
     ufcRows +=`<hr>`;
-    ufcRows += `<div>${document.MATCH_NUMBER}</div>`;
+    ufcRows += `<div class = "card1">`;
     ufcRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
     ufcRows += `<h6>${document.CARD_DESCRIPTION || "N/A"}</h6>`;
-    ufcRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p>`;
+    ufcRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
   });
   console.log("UFC Rows:", ufcRows);
   document.getElementById('ufcTableRows').innerHTML = ufcRows;
@@ -32,10 +36,10 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   let nbaRows = '';
   nbaEvents.forEach(document => {
     nbaRows +=`<hr>`;
-    nbaRows += `<div class="nba-event">${document.MATCH_NUMBER}</div>`; // Separate column for Match Number
+    nbaRows +=`<div class = "card1">`;
     nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
     nbaRows += `<h6>${document.CARD_DESCRIPTION || "N/A"}</h6>`;
-    nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p>`;
+    nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
   });
   console.log("NBA Rows:", nbaRows);
   document.getElementById('nbaTableRows').innerHTML = nbaRows;

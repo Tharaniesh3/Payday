@@ -12,6 +12,16 @@
     }
 }
 @media (max-width: 1366px) {
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     header.header .opnen_menu .header_main_menu .menu_item {
         height: 350px;
     }
@@ -32,6 +42,16 @@
 }
 
 @media (max-width: 1024px) {
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 70px;
     }
@@ -126,6 +146,16 @@
 /* @media (max-width: 1024px ) */
 
 @media (max-width: 991px) {
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     .about_wrap .about_content {
         padding-left: 60px;
     }
@@ -331,6 +361,16 @@
 /* @media (max-width: 991px ) */
 
 @media (max-width: 768px) {
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     .hero_warp.inner_banner {
         padding: 80px 0 50px;
     }
@@ -487,6 +527,16 @@
 
 /* @media (max-width: 768px ) */
 @media (max-width: 990px){
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     .hero_warp .banner_content .banner_title {
         font-size: 70px;
     }
@@ -506,6 +556,16 @@
 /* @media (max-width: 768px ) */
 
 @media (max-width: 767px) {
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     .hero_warp .banner_content .banner_title {
         font-size: 50px;
     }
@@ -562,7 +622,16 @@
 /* @media (max-width: 767px ) */
 
 @media (max-width: 640px) {
-    
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     .hero_warp .banner_content .banner_title {
         margin-top: 90%;
     }
@@ -691,6 +760,16 @@
 /* @media (max-width: 640px ) */
 
 @media (max-width: 576px) {
+    .card1 p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .card1 h6{
+        font-size: 16px;
+    }
+    .card1 h5{
+        font-size: 18px;
+    }
     .bg_strock_text{
         font-size: 100px;
         margin-top: -10px;
@@ -786,6 +865,16 @@
 /* @media (max-width: 576px ) */
 
 @media (max-width: 440px) {
+    .card1 p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .card1 h6{
+        font-size: 14px;
+    }
+    .card1 h5{
+        font-size: 16px;
+    }
     .hero_warp .banner_content .banner_title {
         font-size: 45px;
     }
@@ -859,6 +948,16 @@
     }
 }
 @media (max-width: 340px) {
+    .card1 p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .card1 h6{
+        font-size: 10px;
+    }
+    .card1 h5{
+        font-size: 15px;
+    }
     .hero_warp .banner_content .banner_title {
         font-size: 30px;
     }

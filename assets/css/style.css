@@ -2879,7 +2879,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 70%;
+    width: 90%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
     color: #fff;
@@ -2936,3 +2936,9 @@ hr {
     color: white;
     border-top: 1px solid;
   }
+
+
+.card1 p{
+    color: white;
+    opacity: 50%;
+}
