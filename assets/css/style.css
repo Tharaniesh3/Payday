@@ -1066,7 +1066,7 @@ header.header.headerFixed {
     background: #171819;
     padding: 180px 0 30px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .portfolio_warp .port_bg_text {
@@ -1120,7 +1120,6 @@ header.header.headerFixed {
     margin-top: 60px;
     position: relative;
     margin-bottom: 150px;
-    z-index: 10;
 }
 img {
     border-radius: 10px;
