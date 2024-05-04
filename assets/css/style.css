@@ -760,10 +760,13 @@ header.header.headerFixed {
 .hero_warp {
     height: 100vh;
     width: 100%;
-    background: #000 url(..assets\images\images\landingpage.jpg.jpg) no-repeat fixed top left;
     position: fixed;
+    background-image: url(../bg.jpg);
+    background-size: cover; 
+    background-position: center;
     z-index: 1;
 }
+
 
 .hero_warp.hide {
     display: none;
@@ -943,14 +946,14 @@ header.header.headerFixed {
     left: -50px;
 }
 
-.hero_warp.inner_banner {
+/* .hero_warp.inner_banner {
     background-image: url(../images/contact_bg.jpg);
     background-size: cover;
     background-attachment: scroll;
     height: auto;
     position: relative;
     padding: 175px 0 110px;
-}
+} */
 
 .hero_warp.inner_banner.hide {
     display: block;

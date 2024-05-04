@@ -38,7 +38,7 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
     nbaRows +=`<hr>`;
     nbaRows +=`<div class = "card1">`;
     nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
-    nbaRows += `<h6>${document.CARD_DESCRIPTION || "N/A"}</h6>`;
+    nbaRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
     nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
   });
   console.log("NBA Rows:", nbaRows);
