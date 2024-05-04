@@ -46,9 +46,3 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   document.getElementById('nbaTableRows').innerHTML = nbaRows;
 })
 .catch(error => console.error("Fetch error:", error));
-
-var linkElement = document.createElement('link');
-linkElement.rel = 'stylesheet';
-linkElement.type = 'text/css';
-linkElement.href = 'assets/css/style.css'; 
-document.head.appendChild(linkElement);
