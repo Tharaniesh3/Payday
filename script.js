@@ -35,8 +35,8 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
   let nbaRows = '';
   nbaEvents.forEach(document => {
+    nbaRows +=`<hr style="opacity:50%;">`;
     nbaRows +=`<div class = "card1">`;
-    nbaRows +=`<hr>`;
     nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
     nbaRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
     nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
