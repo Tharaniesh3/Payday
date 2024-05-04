@@ -2887,12 +2887,16 @@ img {
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black (50% opacity) */
     color: #fff;
     text-align: left;
+    font-weight: bold;
+    font-size: 20px;
     border-radius: 6px;
     padding: 10px 10px;
     z-index: 300;
     display: none;
 }
-
+.popup span{
+    text-align: center;
+}
 .popup .close {
     position: absolute;
     top: 5px;

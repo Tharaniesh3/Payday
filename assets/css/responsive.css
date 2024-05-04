@@ -865,6 +865,9 @@
 /* @media (max-width: 576px ) */
 
 @media (max-width: 440px) {
+    .popup{
+        font-size: 15px;
+    }
     .card1 p{
         font-size: 14px;
         line-height: 16px;
@@ -948,6 +951,9 @@
     }
 }
 @media (max-width: 340px) {
+    .popup{
+        font-size: 15px;
+    }
     .card1 p{
         font-size: 10px;
         line-height: 20px;
