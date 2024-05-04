@@ -23,7 +23,7 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
   let ufcRows = '';
   ufcEvents.forEach(document => {
-    ufcRows +=`<hr>`;
+    ufcRows +=`<hr style="opacity:50%;">`;
     ufcRows += `<div class = "card1">`;
     ufcRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
     ufcRows += `<h6>${document.CARD_DESCRIPTION || "N/A"}</h6>`;
@@ -35,11 +35,12 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
   let nbaRows = '';
   nbaEvents.forEach(document => {
-    nbaRows +=`<hr>`;
     nbaRows +=`<div class = "card1">`;
+    nbaRows +=`<hr>`;
     nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
     nbaRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
     nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
+
   });
   console.log("NBA Rows:", nbaRows);
   document.getElementById('nbaTableRows').innerHTML = nbaRows;
