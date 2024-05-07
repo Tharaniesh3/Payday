@@ -108,27 +108,30 @@
     <!-- end header -->
 
     <!-- start hero_warp -->
-    <section class="hero_warp">
-        <div class="container">
-            <div class="row d-flex align-items-center height_vh">
-                <div class="col-md-12 col-12">
-                    <div class="banner_content">
-                        <h1 class="banner_title">PAYDAY <br> FANTASYBOOK</h1>
-                        <ul class="exp_list">
-                            <li class=" wow fadeInUp" data-wow-duration='1s'>DOWNLOAD IOS <img style="height: 20px;" src="assets\apple.png" alt="IOS">                            </li>
-                            <li class=" wow fadeInUp" data-wow-duration='2s'>DOWNLOAD ANDROID&nbsp;<img style="height: 20px;" src="assets\android.png" alt="Android"></li>
-                        </ul>
+    <!-- <section class="bg1 dark_bg"> -->
+        <section class="hero_warp">
+            <div class="container">
+                <div class="row d-flex align-items-center height_vh">
+                    <div class="col-md-12 col-12">
+                        <div class="banner_content">
+                            <h1 class="banner_title">PAYDAY <br> FANTASYBOOK</h1>
+                            <ul class="exp_list">
+                                <li class=" wow fadeInUp" data-wow-duration='1s'>DOWNLOAD IOS <img style="height: 20px;" src="assets\apple.png" alt="IOS"></li>
+                                <li class=" wow fadeInUp" data-wow-duration='2s'>DOWNLOAD ANDROID&nbsp;<img style="height: 20px;" src="assets\android.png" alt="Android"></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="scroll_down">
-            <a href="#portfolio_warp">Scroll Down</a>
-        </div>
-    </section>
+            
+            <div class="scroll_down">
+                <a href="#portfolio_warp">Scroll Down</a>
+            </div>
+        </section>
+    <!-- </section> -->
+    
     <!-- end hero_warp -->
-    <div class="height_vh dark_bg"></div>
+    <!-- <div class="height_vh dark_bg"></div> -->
     <!-- start portfolio_warp -->
     <section class="portfolio_warp" id="portfolio_warp">
     <div class="port_bg_text">
@@ -143,7 +146,7 @@
                     </div>
                     <a class="exp" onclick="togglePopup('ufcPopup', 'nbaPopup')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
                     <div class="popup" id="ufcPopup">
-                        <span class="popuptext">MIXED MARTIAL ARTS</span>
+                        <center><span class="popuptext">MIXED MARTIAL ARTS</span></center><br>
                         <div class="table-responsive" id="ufcTableRows"></div>
                         <span class="close" onclick="closePopup('ufcPopup')">&times;</span>
                     </div>
@@ -163,7 +166,7 @@
                     </div>
                     <a class="exp" onclick="togglePopup('nbaPopup', 'ufcPopup')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
                     <div class="popup" id="nbaPopup">
-                        <span class="popuptext">BASKETBALL</span>
+                        <center><span class="popuptext">BASKETBALL</span></center><br>
                         <div class="table-responsive" id="nbaTableRows"></div>
                         <span class="close" onclick="closePopup('nbaPopup')">&times;</span>
                     </div>
