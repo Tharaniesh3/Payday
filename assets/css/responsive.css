@@ -12,6 +12,9 @@
     }
 }
 @media (max-width: 1366px) {
+    .parallax-layer #img2 {
+        height: 90%;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -42,6 +45,10 @@
 }
 
 @media (max-width: 1024px) {
+    .parallax-layer #img2 {
+        height: 90%;
+        left: 35%;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -146,6 +153,10 @@
 /* @media (max-width: 1024px ) */
 
 @media (max-width: 991px) {
+    .parallax-layer #img2 {
+        height: 80%;
+        left: auto;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -361,6 +372,10 @@
 /* @media (max-width: 991px ) */
 
 @media (max-width: 768px) {
+    .parallax-layer #img2 {
+        height: 80%;
+        left: auto;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -527,6 +542,10 @@
 
 /* @media (max-width: 768px ) */
 @media (max-width: 990px){
+    .parallax-layer #img2 {
+        height: 80%;
+        left: auto;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -556,6 +575,10 @@
 /* @media (max-width: 768px ) */
 
 @media (max-width: 767px) {
+    .parallax-layer #img2 {
+        height: 80%;
+        left: auto;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -622,6 +645,10 @@
 /* @media (max-width: 767px ) */
 
 @media (max-width: 640px) {
+    .parallax-layer #img2 {
+        height: 80%;
+        left: auto;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -760,6 +787,10 @@
 /* @media (max-width: 640px ) */
 
 @media (max-width: 576px) {
+    .parallax-layer #img2 {
+        height: 80%;
+        left: auto;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -865,6 +896,11 @@
 /* @media (max-width: 576px ) */
 
 @media (max-width: 440px) {
+    .parallax-layer #img2 {
+        height: 55%;
+        left: auto;
+        top: 10%;
+    }
     .popup{
         font-size: 15px;
     }

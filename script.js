@@ -33,7 +33,7 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
   let nbaRows = '';
   nbaEvents.forEach((document, index) => {
-    if(index !== 0) { // Ignore <hr> for the first iteration
+    if(index !== 0) { 
       nbaRows +=`<hr style="opacity:50%;">`;
     }
     nbaRows +=`<div class="card1">`;
@@ -51,3 +51,39 @@ linkElement.rel = 'stylesheet';
 linkElement.type = 'text/css';
 linkElement.href = 'assets\css\style.css'; 
 document.head.appendChild(linkElement);
+
+
+
+// Check for mobile and tablet devices
+const isMobileOrTablet = window.matchMedia("(max-width: 991px)").matches;
+
+// Attach appropriate event listener based on device type
+if (isMobileOrTablet) {
+    window.addEventListener("scroll", parallaxMobile);
+} else {
+    window.addEventListener("mousemove", parallaxDesktop);
+}
+
+// Parallax function for desktop devices
+function parallaxDesktop(event) {
+    const layers = document.querySelectorAll(".parallax-layer img");
+    layers.forEach((layer) => {
+        const speed = parseFloat(layer.getAttribute("value"));
+        const x = (window.innerWidth - event.pageX * speed) / 100;
+        const y = (window.innerHeight - event.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+}
+
+// Parallax function for mobile and tablet devices
+function parallaxMobile() {
+    const layers = document.querySelectorAll(".parallax-layer img");
+    layers.forEach((layer) => {
+        const speed = parseFloat(layer.getAttribute("value"));
+        const scrollX = window.scrollX;
+        const scrollY = window.scrollY;
+        const x = (window.innerWidth - scrollX * speed) / 100;
+        const y = (window.innerHeight - scrollY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+}

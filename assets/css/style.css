@@ -768,6 +768,17 @@ header.header.headerFixed {
 }
 
 
+.parallax-layer #img2 {
+    content: url("../person.png");
+    height: 90%;
+    left: 35%;
+}
+.parallax-layer img {
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.4s ease-out;
+}
+
 .hero_warp.hide {
     display: none;
 }
