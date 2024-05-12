@@ -29,7 +29,15 @@ h6,
 p {
     margin: 0;
 }
+.ios-link {
+    color: #FFFFFF; /* Set default text color to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add transition for smooth effect */
+}
 
+.ios-link:hover {
+    color: #FFFFFF; /* Change text color to white on hover */
+}
 .pop {
     font-family: "Poppins", sans-serif;
 }
