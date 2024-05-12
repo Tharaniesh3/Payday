@@ -58,10 +58,12 @@ a {
     border-radius: 5px;
     display: none;
     position: absolute;
-    background-color: #000;
+    background-color: rgba(85, 85, 85, 0.5);
+    text-align: center;
     min-width: 180px;
     z-index: 100;
 }
+
 
 .dropdown-content a {
     padding: 6px 6px;
