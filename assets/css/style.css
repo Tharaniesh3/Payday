@@ -769,7 +769,7 @@ header.header.headerFixed {
 .hero_warp {
     width: 100%;
     position: fixed;
-    filter: brightness(150%);
+    /* filter: brightness(150%); */
     background-image: url(../bg.png);
     background-size:cover; 
     background-position: center;
@@ -827,14 +827,13 @@ header.header.headerFixed {
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
 }
-
+/* 
 .hero_warp.blog_single_banner:before {
     background: rgba(0, 0, 0, 0.8);
-}
+} */
 
 .hero_warp .bg_img_slider_wrap {
     position: absolute;
