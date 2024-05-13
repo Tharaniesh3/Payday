@@ -769,6 +769,7 @@ header.header.headerFixed {
 .hero_warp {
     width: 100%;
     position: fixed;
+    filter: brightness(150%);
     background-image: url(../bg.png);
     background-size:cover; 
     background-position: center;
