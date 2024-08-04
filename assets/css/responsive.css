@@ -1,4 +1,5 @@
 @media (min-width: 768px){
+
     header.header .navbar .hamburger .bar_icon {
         display: none;
     }
@@ -372,6 +373,7 @@
 /* @media (max-width: 991px ) */
 
 @media (max-width: 768px) {
+   
     .banner_title{
         display: none;
     }
@@ -395,6 +397,9 @@
     .glow-on-hover {
         width: 100%;
         max-width: 350px;
+    }
+    .sub_title{
+        font-size: 12px;
     }
     .parallax-layer #img2 {
         height: 80%;
