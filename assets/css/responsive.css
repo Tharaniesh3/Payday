@@ -372,6 +372,30 @@
 /* @media (max-width: 991px ) */
 
 @media (max-width: 768px) {
+    .banner_title{
+        display: none;
+    }
+    .hey {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        line-height: 1.2; /* Adjust line height to create space between lines */
+        text-align: center; /* Center align text for better appearance */
+    }
+    .hey::before {
+        content: "Payday";
+        display: block;
+    }
+    .hey::after {
+        content: "Fantasybook";
+        display: block;
+    }
+    .hero_warp .banner_content .exp_list {
+        flex-direction: column;
+        gap: 20px; /* Increase the gap if needed */
+    }
+    .glow-on-hover {
+        width: 100%;
+        max-width: 350px;
+    }
     .parallax-layer #img2 {
         height: 80%;
         left: auto;
@@ -645,6 +669,11 @@
 /* @media (max-width: 767px ) */
 
 @media (max-width: 640px) {
+    .glow-on-hover {
+        transition: 0.2s;
+        width: 250px;
+        height: 75px;
+    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -777,9 +806,18 @@
         padding-bottom: 0;
     }
 }
-
+@media (min-width: 768px) {
+    .hey{
+        display: none;
+    }
+}
 /* @media (max-width: 640px ) */
 @media (max-width: 576px) {
+
+    /* .parallax-layer #img2 {
+        height: 80%;
+        left: auto;
+    } */
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -829,9 +867,6 @@
     .hero_warp .banner_content .exp_list li {
         font-size: 10px;
         line-height: 20px;
-    }
-    .hero_warp .banner_content .exp_list li+li {
-        padding-left: 25px;
     }
     .hero_warp .banner_content .exp_list li+li:before {
         left: 6px;
@@ -885,6 +920,11 @@
 /* @media (max-width: 576px ) */
 
 @media (max-width: 440px) {
+    .glow-on-hover {
+        transition: 0.2s;
+        width: 200px;
+        height: 50px;
+    }
     .parallax-layer #img2 {
         height: 55%;
         left: auto;
@@ -960,6 +1000,7 @@
 }
 
 @media (max-height: 440px) and (max-width: 992px) {
+ 
     header.header .opnen_menu .header_main_menu {
         margin-top: 120px;
     }
@@ -976,6 +1017,7 @@
     }
 }
 @media (max-width: 340px) {
+    
     .popup{
         font-size: 15px;
     }
