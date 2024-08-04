@@ -631,9 +631,9 @@
 /* @media (max-width: 767px ) */
 
 @media (max-width: 767px) and (min-width: 640px) {
-    .hero_warp .banner_content .banner_title {
+    /* .hero_warp .banner_content .banner_title {
         margin-top: 90%;
-    }
+    } */
     .banner_content {
         padding-top: 40px;
     }
@@ -645,10 +645,6 @@
 /* @media (max-width: 767px ) */
 
 @media (max-width: 640px) {
-    .parallax-layer #img2 {
-        height: 80%;
-        left: auto;
-    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
@@ -659,9 +655,7 @@
     .card1 h5{
         font-size: 18px;
     }
-    .hero_warp .banner_content .banner_title {
-        margin-top: 90%;
-    }
+
     .hero_warp.inner_banner .banner_content .banner_title {
         font-size: 50px;
         margin-bottom: 5px;
@@ -785,12 +779,7 @@
 }
 
 /* @media (max-width: 640px ) */
-
 @media (max-width: 576px) {
-    .parallax-layer #img2 {
-        height: 80%;
-        left: auto;
-    }
     .card1 p{
         font-size: 16px;
         line-height: 18px;
