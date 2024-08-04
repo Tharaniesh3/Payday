@@ -785,7 +785,7 @@ header.header.headerFixed {
     z-index: 1;
 }
 
-
+/* 
 .parallax-layer #img2 {
     content: url("../bg_cleaned.png");
     height: 100%;
@@ -795,7 +795,7 @@ header.header.headerFixed {
     position: absolute;
     pointer-events: none;
     transition: transform 0.4s ease-out;
-}
+} */
 
 .hero_warp.hide {
     display: none;

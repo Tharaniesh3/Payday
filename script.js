@@ -29,7 +29,6 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   });
   console.log("UFC Rows:", ufcRows);
   document.getElementById('ufcTableRows').innerHTML = ufcRows;
-  
   const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
   let nbaRows = '';
   nbaEvents.forEach((document, index) => {
@@ -45,25 +44,19 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   document.getElementById('nbaTableRows').innerHTML = nbaRows;
 })
 .catch(error => console.error("Fetch error:", error));
-
 var linkElement = document.createElement('link');
 linkElement.rel = 'stylesheet';
 linkElement.type = 'text/css';
 linkElement.href = 'assets\css\style.css'; 
 document.head.appendChild(linkElement);
-
-
-
 // Check for mobile and tablet devices
 const isMobileOrTablet = window.matchMedia("(max-width: 991px)").matches;
-
 // Attach appropriate event listener based on device type
 if (isMobileOrTablet) {
     window.addEventListener("scroll", parallaxMobile);
 } else {
     window.addEventListener("mousemove", parallaxDesktop);
 }
-
 // Parallax function for desktop devices
 function parallaxDesktop(event) {
     const layers = document.querySelectorAll(".parallax-layer img");
@@ -74,7 +67,6 @@ function parallaxDesktop(event) {
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 }
-
 // Parallax function for mobile and tablet devices
 function parallaxMobile() {
     const layers = document.querySelectorAll(".parallax-layer img");
@@ -87,8 +79,6 @@ function parallaxMobile() {
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 }
-
-
 document.addEventListener('DOMContentLoaded', function() {
   fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller')
     .then(response => response.json())
