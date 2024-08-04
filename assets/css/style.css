@@ -831,7 +831,6 @@ header.header.headerFixed {
     width: 100%;
     height: 100vh;
 }
-
 .hero_warp .banner_content .banner_title {
     color: #f6f7fb;
     font-size: 100px;
@@ -841,7 +840,7 @@ header.header.headerFixed {
 }
 .hero_warp .banner_content .hey {
     color: #f6f7fb;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: normal;
     font-family: "strikerz";
     margin-bottom: 10px;
