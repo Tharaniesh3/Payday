@@ -378,7 +378,7 @@
         display: none;
     }
     .hey {
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 30px; /* Adjust font size for smaller screens */
         line-height: 1.2; /* Adjust line height to create space between lines */
         text-align: center; /* Center align text for better appearance */
     }
