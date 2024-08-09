@@ -36,22 +36,23 @@ h5,
 h6{
     margin: 0;
 }
-.ios-link {
-    color: #FFFFFF; /* Set default text color to white */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Add transition for smooth effect */
-}
-.ios-link:hover {
-    color: #FFFFFF; /* Change text color to white on hover */
-}
+.ios-link,
 .android-link {
-    color: #FFFFFF; /* Set default text color to white */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Add transition for smooth effect */
+    color: #FFFFFF; 
+    text-decoration: none;
+    transition: color 0.3s; 
+    white-space: nowrap; 
+    display: inline-flex;
+    align-items: center; 
 }
 
+.ios-link:hover,
 .android-link:hover {
-    color: #FFFFFF; /* Change text color to white on hover */
+    color: #FFFFFF;
+}
+
+.download-text {
+    margin-left: 5px; 
 }
 .pop {
     font-family: "Poppins", sans-serif;

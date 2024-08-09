@@ -374,6 +374,9 @@
 
 
 @media (max-width: 768px) {
+    .download-text {
+        font-size: 14px;
+    }
     .banner_title{
         display: none;
     }
