@@ -3,7 +3,6 @@
 .primary-color {
     color: #ffffff;
 }
-@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .sub_title{
  color: #FFFFFF;
  line-height: 25px;
@@ -27,9 +26,7 @@
     color: #1b1d22;
 }
 .banner_content .h1{
-    font-family: "Familjen Grotesk", sans-serif;
-    font-weight: normal;
-
+    font-family: 'strikerz';
 }
 h1,
 h2,
@@ -44,7 +41,6 @@ h6{
     text-decoration: none; /* Remove underline */
     transition: color 0.3s; /* Add transition for smooth effect */
 }
-
 .ios-link:hover {
     color: #FFFFFF; /* Change text color to white on hover */
 }
@@ -186,13 +182,13 @@ a.link:hover {
     font-weight: normal;
     font-style: normal;
 }
-/* @font-face {
+@font-face {
     font-family: 'strikerz';
     src: url("../fonts/strikerz.ttf") format("woff2"), url("../fonts/strikerz.ttf") format("woff");;
     font-weight: normal;
     font-style: normal;
    }
-    */
+   
 * {
     padding: 0;
     margin: 0;
@@ -841,13 +837,14 @@ header.header.headerFixed {
     color: #f6f7fb;
     font-size: 100px;
     font-weight: 400;
-    font-family: "Familjen Grotesk", sans-serif;    margin-bottom: 10px;
+    font-family: "strikerz";
+    margin-bottom: 10px;
 }
 .hero_warp .banner_content .hey {
     color: #f6f7fb;
     font-size: 50px;
     font-weight: normal;
-    font-family: "Familjen Grotesk", sans-serif;
+    font-family: "strikerz";
     margin-bottom: 10px;
 }
 
