@@ -26,7 +26,7 @@
     color: #1b1d22;
 }
 .banner_content .h1{
-    font-family: 'strikerz';
+    font-family: "strikerz", sans-serif;
 }
 h1,
 h2,
@@ -127,12 +127,6 @@ a.link:hover {
     color: rgba(23, 24, 25, 0.6) !important;
 }
 
-@font-face {
-    font-family: 'futura_bdcn_btbold';
-    src: url("../fonts/futura/futura_bold_font.woff2") format("woff2"), url("../fonts/futura/futura_bold_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'futurabook';
@@ -141,12 +135,6 @@ a.link:hover {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'futura_xblk_btextra_black';
-    src: url("../fonts/futura/futura_extra_black_font.woff2") format("woff2"), url("../fonts/futura/futura_extra_black_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'futuraheavy';
@@ -155,39 +143,12 @@ a.link:hover {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'futuralight';
-    src: url("../fonts/futura/futura_light_bt.woff2") format("woff2"), url("../fonts/futura/futura_light_bt.woff") format("woff");
+/* @font-face {
+    font-family: "strikerz";
+    src: url("../fonts/Strikerz/STRIKERZ-normal-400-100.ttf")    format("truetype");
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_ltcn_btlight';
-    src: url("../fonts/futura/futura_light_font.woff2") format("woff2"), url("../fonts/futura/futura_light_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futuramedium';
-    src: url("../fonts/futura/futura_medium_bt.woff2") format("woff2"), url("../fonts/futura/futura_medium_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_xblk_btextra_black';
-    src: url("../fonts/futura/futura_xblk_bt.woff2") format("woff2"), url("../fonts/futura/futura_xblk_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'strikerz';
-    src: url("..fonts/Strikerz/STRIKERZ-normal-400-100.ttf") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-   }
+   } */
    
 * {
     padding: 0;
@@ -837,14 +798,14 @@ header.header.headerFixed {
     color: #f6f7fb;
     font-size: 100px;
     font-weight: 400;
-    font-family: "strikerz";
+    font-family: "strikerz", sans-serif;
     margin-bottom: 10px;
 }
 .hero_warp .banner_content .hey {
     color: #f6f7fb;
     font-size: 50px;
     font-weight: normal;
-    font-family: "strikerz";
+    font-family: "strikerz", sans-serif;
     margin-bottom: 10px;
 }
 
