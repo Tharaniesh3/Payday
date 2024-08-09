@@ -26,7 +26,7 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
       ufcRows += `<div class="card1">`;
       ufcRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
       ufcRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
-      ufcRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
+      ufcRows += `<p>${convertToLocalTime(document.CARD_DATE_TIME)}</p></div>`;
     });
     console.log("UFC Rows:", ufcRows);
     document.getElementById('ufcTableRows').innerHTML = ufcRows;
@@ -40,7 +40,7 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
       nbaRows += `<div class="card1">`;
       nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
       nbaRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
-      nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
+      nbaRows += `<p>${convertToLocalTime(document.MATCH_DATE_TIME)}</p></div>`;
     });
     console.log("NBA Rows:", nbaRows);
     document.getElementById('nbaTableRows').innerHTML = nbaRows;
@@ -54,11 +54,28 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
       nflRows += `<div class="card1">`;
       nflRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
       nflRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
-      nflRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
+      nflRows += `<p>${convertToLocalTime(document.MATCH_DATE_TIME)}</p></div>`;
     });
     console.log("NFL Rows:", nflRows);
     document.getElementById('nflTableRows').innerHTML = nflRows;
   })
+  .catch(error => console.error('Error fetching match data:', error));
+
+// Function to convert GMT time to local time
+function convertToLocalTime(gmtTimeString) {
+  const localTime = new Date(gmtTimeString);
+  return localTime.toLocaleString(undefined, {
+    weekday: 'short',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: true // For 12-hour format, remove if 24-hour format is preferred
+  });
+}
+
   document.addEventListener('DOMContentLoaded', async function() {
     const legalStates = [
         "Alaska", "California", "Florida", "Georgia", "Illinois", "Kansas", "Kentucky", 
