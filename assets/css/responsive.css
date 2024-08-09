@@ -383,11 +383,11 @@
         text-align: center; /* Center align text for better appearance */
     }
     .hey::before {
-        content: "Payday";
+        content: "PAYDAY";
         display: block;
     }
     .hey::after {
-        content: "Fantasybook";
+        content: "FANTASYBOOK";
         display: block;
     }
     .hero_warp .banner_content .exp_list {
