@@ -145,7 +145,7 @@ a.link:hover {
 
 @font-face {
     font-family: "strikerz";
-    src: url("../fonts/Strikerz/STRIKERZ-normal-400-100.ttf")    format("truetype");
+    src: url("../fonts/Strikerz/STRIKERZ-normal-400-100.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
    }
