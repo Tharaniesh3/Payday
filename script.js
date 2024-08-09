@@ -71,25 +71,36 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(error => console.error('Error fetching the download link:', error));
 });
 
-
 document.addEventListener('DOMContentLoaded', async function() {
   const legalStates = [
       "Alaska", "California", "Florida", "Georgia", "Illinois", "Kansas", "Kentucky", 
       "Minnesota", "Nebraska", "New Mexico", "North Carolina", "North Dakota", 
       "Oklahoma", "Oregon", "Rhode Island", "South Carolina", "South Dakota", 
-      "Texas", "Utah", "West Virginia", "Wisconsin", "Wyoming",
+      "Texas", "Utah", "West Virginia", "Wisconsin", "Wyoming", "Tamil Nadu"
   ];
 
   const button = document.getElementById('fetch-button');
 
   function disableButton() {
       button.removeAttribute('href');
-      button.style.pointerEvents = 'auto';
+      button.style.pointerEvents = 'none'; // Make sure the button is not clickable
       button.style.opacity = '0.5';
       button.addEventListener('click', function(event) {
           event.preventDefault();
-          alert("The app is not available in your location.");
+          showPopup();
       });
+  }
+
+  function showPopup() {
+      const popup = document.createElement('div');
+      popup.className = 'popup';
+      popup.innerHTML = `
+        <div class="popup-content">
+          <span class="close" onclick="this.parentElement.parentElement.remove()">&times;</span>
+          <p>This app is not available in your location.</p>
+        </div>
+      `;
+      document.body.appendChild(popup);
   }
 
   try {
@@ -99,8 +110,6 @@ document.addEventListener('DOMContentLoaded', async function() {
       }
       const data = await response.json();
       const userState = data.region ? data.region.trim() : '';
-      
-      console.log("Detected User State:", userState);
 
       if (legalStates.includes(userState)) {
           try {
@@ -113,6 +122,11 @@ document.addEventListener('DOMContentLoaded', async function() {
 
               if (appUrl) {
                   button.href = appUrl;
+                  button.addEventListener('click', function(event) {
+                      setTimeout(() => {
+                          window.location.href = 'thank_you.html'; // Redirect to thank you page
+                      }, 1000); // Delay to allow download to start
+                  });
               } else {
                   console.error('No valid URL received.');
                   disableButton();
