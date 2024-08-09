@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   function disableButton() {
       button.removeAttribute('href');
-      button.style.pointerEvents = 'none'; // Make sure the button is not clickable
+      button.style.pointerEvents = 'none';
       button.style.opacity = '0.5';
       button.addEventListener('click', function(event) {
           event.preventDefault();
