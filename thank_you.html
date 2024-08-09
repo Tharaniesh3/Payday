@@ -9,32 +9,42 @@
 <body>
     <center>
     <h1 style="padding-top: 15vh;">Thank You for Downloading!</h1>
-    <p>If the download did not start, please try again.</p>
+    <p id="timer-message">Your download should start shortly. If not, please try again in <span id="countdown">10</span> seconds.</p>
+    <p id="download-message" class="hidden">If the download did not start, please <a target="_blank" id="fetch-button" class="android-link" style="color: #E90C3F;">try again</a>.</p>
     </center>
     <div class="instructions">
         <p>Follow these steps to complete the installation:</p>
         <ol>
             <li>
-                <p>Once the file is downloaded, click on it to begin the installation process. You will see a screen like this:</p>
-                <img src="../filix/downloading.jpg" alt="Downloading file message">
+                <p>If your phone isn't allowed to install unknown apps, go to settings when prompted. The screen will look like this:</p>
+                <img src="assets/Settings.jpg" alt="Go to settings to allow installation from unknown sources">
+            </li>
+            <li>
+                <p>Toggle on "Allow permission" to permit the installation:</p>
+                <img src="assets/unknown.jpg" alt="Toggle on to allow installation from unknown sources">
+            </li>
+            <li>
+                <p>Click on the file again to install the app:</p>
+                <img src="assets/install.jpg" alt="Install the app">
             </li>
             <li>
                 <p>Google Play Protect might ask you to scan the app. Click on "Scan app" to ensure your device's safety:</p>
-                <img src="../filix/scanapp.jpg" alt="Google Play Protect - Scan app recommendation">
+                <img src="assets/scanapp.jpg" alt="Google Play Protect - Scan app recommendation">
             </li>
             <li>
                 <p>After the scan, you will be prompted to install the app. Click "Install" to proceed:</p>
-                <img src="../filix/install.jpg" alt="Install screen for Payday Fantasybook">
+                <img src="assets/install.jpg" alt="Install the app">
             </li>
             <li>
                 <p>Once the app is installed, you can either open it immediately by clicking "Open" or find it on your home screen:</p>
-                <img src="../filix/open.jpg" alt="Open app">
+                <img src="assets/scanapp.jpg" alt="App installed open button">
             </li>
             <li>
                 <p>The app should now be ready to use! Here's what the app icon looks like on your home screen:</p>
-                <img src="../filix/app.jpg" alt="App icon on home screen">
+                <img src="assets/app.jpg" alt="App icon on home screen">
             </li>
         </ol>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

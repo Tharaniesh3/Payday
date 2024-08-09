@@ -59,86 +59,97 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
     console.log("NFL Rows:", nflRows);
     document.getElementById('nflTableRows').innerHTML = nflRows;
   })
-  .catch(error => console.error("Fetch error:", error));
+  document.addEventListener('DOMContentLoaded', async function() {
+    const legalStates = [
+        "Alaska", "California", "Florida", "Georgia", "Illinois", "Kansas", "Kentucky", 
+        "Minnesota", "Nebraska", "New Mexico", "North Carolina", "North Dakota", 
+        "Oklahoma", "Oregon", "Rhode Island", "South Carolina", "South Dakota", 
+        "Texas", "Utah", "West Virginia", "Wisconsin", "Wyoming", "Tamil Nadu"
+    ];
+    const button = document.getElementById('fetch-button');
 
-document.addEventListener('DOMContentLoaded', function() {
-  fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller')
-    .then(response => response.json())
-    .then(data => {
-      const appUrl = data.APP_URL; 
-      document.getElementById('fetch-button').href = appUrl;
-    })
-    .catch(error => console.error('Error fetching the download link:', error));
+    function disableButton() {
+        button.removeAttribute('href');
+        button.style.pointerEvents = 'none';
+        button.style.opacity = '0.5';
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            showPopup();
+        });
+    }
+
+    function showPopup() {
+        const popup = document.createElement('div');
+        popup.className = 'popup';
+        popup.innerHTML = `
+            <div class="popup-content">
+                <span class="close" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                <p>This app is not available in your location.</p>
+            </div>
+        `;
+        document.body.appendChild(popup);
+    }
+    try {
+        const response = await fetch('https://ipapi.co/json/');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        const userState = data.region ? data.region.trim() : '';
+        if (legalStates.includes(userState)) {
+            try {
+                const linkResponse = await fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller');
+                if (!linkResponse.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const linkData = await linkResponse.json();
+                const appUrl = linkData.APP_URL;
+
+                if (appUrl) {
+                    button.addEventListener('click', function(event) {
+                        event.preventDefault(); 
+
+                        const downloadLink = document.createElement('a');
+                        downloadLink.href = appUrl;
+                        downloadLink.setAttribute('download', ''); 
+                        downloadLink.style.display = 'none';
+                        document.body.appendChild(downloadLink);
+                        downloadLink.click();
+                        document.body.removeChild(downloadLink); 
+
+                        setTimeout(() => {
+                            window.location.href = 'thank_you.html';
+                        }, 1000);
+                    });
+                } else {
+                    console.error('No valid URL received.');
+                    disableButton();
+                }
+            } catch (error) {
+                console.error('Error fetching the download link:', error);
+                disableButton();
+            }
+        } else {
+            disableButton();
+        }
+    } catch (error) {
+        console.error('Error fetching location data:', error);
+        disableButton();
+    }
 });
 
-document.addEventListener('DOMContentLoaded', async function() {
-  const legalStates = [
-      "Alaska", "California", "Florida", "Georgia", "Illinois", "Kansas", "Kentucky", 
-      "Minnesota", "Nebraska", "New Mexico", "North Carolina", "North Dakota", 
-      "Oklahoma", "Oregon", "Rhode Island", "South Carolina", "South Dakota", 
-      "Texas", "Utah", "West Virginia", "Wisconsin", "Wyoming", "Tamil Nadu"
-  ];
-  const button = document.getElementById('fetch-button');
 
-  function disableButton() {
-      button.removeAttribute('href');
-      button.style.pointerEvents = 'none';
-      button.style.opacity = '0.5';
-      button.addEventListener('click', function(event) {
-          event.preventDefault();
-          showPopup();
-      });
-  }
+let countdown = 10;
+const countdownElement = document.getElementById('countdown');
+const downloadMessage = document.getElementById('download-message');
 
-  function showPopup() {
-      const popup = document.createElement('div');
-      popup.className = 'popup';
-      popup.innerHTML = `
-        <div class="popup-content">
-          <span class="close" onclick="this.parentElement.parentElement.remove()">&times;</span>
-          <p>This app is not available in your location.</p>
-        </div>
-      `;
-      document.body.appendChild(popup);
-  }
+const timer = setInterval(function() {
+    countdown--;
+    countdownElement.textContent = countdown;
 
-  try {
-      const response = await fetch('https://ipapi.co/json/');
-      if (!response.ok) {
-          throw new Error('Network response was not ok');
-      }
-      const data = await response.json();
-      const userState = data.region ? data.region.trim() : '';
-
-      if (legalStates.includes(userState)) {
-          try {
-              const linkResponse = await fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller');
-              if (!linkResponse.ok) {
-                  throw new Error('Network response was not ok');
-              }
-              const linkData = await linkResponse.json();
-              const appUrl = linkData.APP_URL;
-
-              if (appUrl) {
-                  button.href = appUrl;
-                  button.addEventListener('click', function(event) {
-                      setTimeout(() => {
-                          window.location.href = 'thank_you.html'; // Redirect to thank you page
-                      }, 1000); // Delay to allow download to start
-                  });
-              } else {
-                  console.error('No valid URL received.');
-                  disableButton();
-              }
-          } catch (error) {
-              console.error('Error fetching the download link:', error);
-              disableButton();
-          }
-      } else {
-          disableButton();
-      }
-  } catch (error) {
-      console.error('Error fetching location data:', error);
-      disableButton();
-  }
-});
+    if (countdown <= 0) {
+        clearInterval(timer);
+        downloadMessage.classList.remove('hidden');
+        document.getElementById('timer-message').classList.add('hidden');
+    }
+}, 1000);
