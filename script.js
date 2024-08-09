@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller')
     .then(response => response.json())
     .then(data => {
-      const appUrl = data.appUrlsdocs[0].APP_URL;
+      const appUrl = data.APP_URL;
       document.getElementById('fetch-button').href = appUrl;
     })
     .catch(error => console.error('Error fetching the download link:', error));

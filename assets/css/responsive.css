@@ -372,15 +372,15 @@
 
 /* @media (max-width: 991px ) */
 
+
 @media (max-width: 768px) {
-   
     .banner_title{
         display: none;
     }
     .hey {
-        font-size: 30px; /* Adjust font size for smaller screens */
-        line-height: 1.2; /* Adjust line height to create space between lines */
-        text-align: center; /* Center align text for better appearance */
+        font-size: 30px;
+        line-height: 1.2; 
+        text-align: center;
     }
     .hey::before {
         content: "PAYDAY";
@@ -392,7 +392,7 @@
     }
     .hero_warp .banner_content .exp_list {
         flex-direction: column;
-        gap: 20px; /* Increase the gap if needed */
+        gap: 20px;
     }
     .glow-on-hover {
         width: 100%;
