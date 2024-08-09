@@ -107,13 +107,6 @@ a {
 .underline {
     text-decoration: underline !important;
 }
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: #121212;
-    color: #f1f1f1;
-}
 h1 {
     color: #ffffff;
 }
