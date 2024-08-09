@@ -19,7 +19,7 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
   let ufcRows = '';
   ufcEvents.forEach((document, index) => {
-    if(index !== 0) {
+    if(index !== 0) { // Ignore <hr> for the first iteration
       ufcRows +=`<hr style="opacity:50%;">`;
     }
     ufcRows += `<div class="card1">`;
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller')
     .then(response => response.json())
     .then(data => {
-      const appUrl = data.APP_URL;
+      const appUrl = data.APP_URL;  // Directly access the APP_URL
       document.getElementById('fetch-button').href = appUrl;
     })
     .catch(error => console.error('Error fetching the download link:', error));
