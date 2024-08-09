@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', async function() {
       "Oklahoma", "Oregon", "Rhode Island", "South Carolina", "South Dakota", 
       "Texas", "Utah", "West Virginia", "Wisconsin", "Wyoming", "Tamil Nadu"
   ];
-
   const button = document.getElementById('fetch-button');
 
   function disableButton() {
