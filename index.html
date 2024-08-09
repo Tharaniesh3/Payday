@@ -179,7 +179,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
                 <div class="portfolio_item">
                     <div class="port_img tilt">
@@ -203,20 +202,6 @@
             <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
                 <div class="portfolio_item">
                     <div class="port_img tilt">
-                        <a><img src="assets/rugby.png" alt="img" class="img-fluid"></a>
-                    </div>
-                    <a class="exp"><span class="exp_inner"><span class="exp_hover">Coming Soon!</span></span></a>
-                    <div class="port_text">
-                        <a>
-                            <h3 class="port_title">AMERICAN FOOTBALL</h3>
-                        </a>
-                        <!-- <p class="catagory">- <a href="#">COMING SOON!</a></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
-                <div class="portfolio_item">
-                    <div class="port_img tilt">
                         <a><img src="assets/soccer.png" alt="img" class="img-fluid"></a>
                     </div>
                     <a class="exp"><span class="exp_inner"><span class="exp_hover">Coming Soon!</span></span></a>
@@ -228,6 +213,26 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 portfolio_single_item wow fadeInUp">
+                <div class="portfolio_item">
+                  <div class="port_img tilt">
+                    <a><img src="assets/rugby.png" alt="img" class="img-fluid"></a>
+                  </div>
+                  <a class="exp" onclick="togglePopup('nflPopup', 'ufcPopup')"><span class="exp_inner"><span class="exp_hover">Explore</span></span></a>
+                  <div class="popup" id="nflPopup">
+                    <center><span class="popuptext">AMERICAN FOOTBALL</span></center>
+                    <br>
+                    <div class="table-responsive" id="nflTableRows"></div>
+                    <span class="close" onclick="closePopup('nflPopup')">&times;</span>
+                  </div>
+                  <div class="port_text">
+                    <a>
+                      <h3 class="port_title">AMERICAN FOOTBALL</h3>
+                    </a>
+                    <p class="catagory">- <a href="#">NEXT UP - CHI BEARS vs. HOU TEXANS</a></p>
+                  </div>
+                </div>
+              </div>              
         </div>
     </div>
 </center>

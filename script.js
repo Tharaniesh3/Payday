@@ -1,84 +1,66 @@
 function togglePopup(openPopupId, closePopupId) {
   var openPopup = document.getElementById(openPopupId);
   var closePopup = document.getElementById(closePopupId);
-  // Close the currently open popup
   if (closePopup.classList.contains("show")) {
     closePopup.classList.remove("show");
   }
-  // Toggle the display of the target popup
   openPopup.classList.toggle("show");
 }
+
 function closePopup(popupId) {
   var popup = document.getElementById(popupId);
   popup.classList.remove("show");
 }
+
 fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
-.then(response => response.json())
-.then(data => {
-  console.log("Received data:", data);
-  const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
-  let ufcRows = '';
-  ufcEvents.forEach((document, index) => {
-    if(index !== 0) { // Ignore <hr> for the first iteration
-      ufcRows +=`<hr style="opacity:50%;">`;
-    }
-    ufcRows += `<div class="card1">`;
-    ufcRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
-    ufcRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
-    ufcRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
-  });
-  console.log("UFC Rows:", ufcRows);
-  document.getElementById('ufcTableRows').innerHTML = ufcRows;
-  const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
-  let nbaRows = '';
-  nbaEvents.forEach((document, index) => {
-    if(index !== 0) { 
-      nbaRows +=`<hr style="opacity:50%;">`;
-    }
-    nbaRows +=`<div class="card1">`;
-    nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
-    nbaRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
-    nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
-  });
-  console.log("NBA Rows:", nbaRows);
-  document.getElementById('nbaTableRows').innerHTML = nbaRows;
-})
-.catch(error => console.error("Fetch error:", error));
-var linkElement = document.createElement('link');
-linkElement.rel = 'stylesheet';
-linkElement.type = 'text/css';
-linkElement.href = 'assets\css\style.css'; 
-document.head.appendChild(linkElement);
-// Check for mobile and tablet devices
-const isMobileOrTablet = window.matchMedia("(max-width: 991px)").matches;
-// Attach appropriate event listener based on device type
-if (isMobileOrTablet) {
-    window.addEventListener("scroll", parallaxMobile);
-} else {
-    window.addEventListener("mousemove", parallaxDesktop);
-}
-// Parallax function for desktop devices
-function parallaxDesktop(event) {
-    const layers = document.querySelectorAll(".parallax-layer img");
-    layers.forEach((layer) => {
-        const speed = parseFloat(layer.getAttribute("value"));
-        const x = (window.innerWidth - event.pageX * speed) / 100;
-        const y = (window.innerHeight - event.pageY * speed) / 100;
-        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  .then(response => response.json())
+  .then(data => {
+    console.log("Received data:", data);
+
+    const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
+    let ufcRows = '';
+    ufcEvents.forEach((document, index) => {
+      if(index !== 0) { 
+        ufcRows += `<hr style="opacity:50%;">`;
+      }
+      ufcRows += `<div class="card1">`;
+      ufcRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
+      ufcRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
+      ufcRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
     });
-}
-// Parallax function for mobile and tablet devices
-function parallaxMobile() {
-    const layers = document.querySelectorAll(".parallax-layer img");
-    layers.forEach((layer) => {
-        const speed = parseFloat(layer.getAttribute("value"));
-        const scrollX = window.scrollX;
-        const scrollY = window.scrollY;
-        const x = (window.innerWidth - scrollX * speed) / 100;
-        const y = (window.innerHeight - scrollY * speed) / 100;
-        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    console.log("UFC Rows:", ufcRows);
+    document.getElementById('ufcTableRows').innerHTML = ufcRows;
+
+    const nbaEvents = data.documents.filter(document => document.SPORTS_NAME === "NBA");
+    let nbaRows = '';
+    nbaEvents.forEach((document, index) => {
+      if(index !== 0) { 
+        nbaRows += `<hr style="opacity:50%;">`;
+      }
+      nbaRows += `<div class="card1">`;
+      nbaRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
+      nbaRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
+      nbaRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
     });
-}
+    console.log("NBA Rows:", nbaRows);
+    document.getElementById('nbaTableRows').innerHTML = nbaRows;
+
+    const nflEvents = data.documents.filter(document => document.SPORTS_NAME === "NFL");
+    let nflRows = '';
+    nflEvents.forEach((document, index) => {
+      if(index !== 0) { 
+        nflRows += `<hr style="opacity:50%;">`;
+      }
+      nflRows += `<div class="card1">`;
+      nflRows += `<h5>${document.CARD_NAME || document.MATCH_NAME}</h5>`;
+      nflRows += `<h6>${document.CARD_DESCRIPTION || ""}</h6>`;
+      nflRows += `<p>${document.CARD_DATE_TIME || document.MATCH_DATE_TIME}</p></div>`;
+    });
+    console.log("NFL Rows:", nflRows);
+    document.getElementById('nflTableRows').innerHTML = nflRows;
+  })
+  .catch(error => console.error("Fetch error:", error));
+
 document.addEventListener('DOMContentLoaded', function() {
   fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller')
     .then(response => response.json())
@@ -87,4 +69,63 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('fetch-button').href = appUrl;
     })
     .catch(error => console.error('Error fetching the download link:', error));
+});
+
+
+document.addEventListener('DOMContentLoaded', async function() {
+  const legalStates = [
+      "Alaska", "California", "Florida", "Georgia", "Illinois", "Kansas", "Kentucky", 
+      "Minnesota", "Nebraska", "New Mexico", "North Carolina", "North Dakota", 
+      "Oklahoma", "Oregon", "Rhode Island", "South Carolina", "South Dakota", 
+      "Texas", "Utah", "West Virginia", "Wisconsin", "Wyoming",
+  ];
+
+  const button = document.getElementById('fetch-button');
+
+  function disableButton() {
+      button.removeAttribute('href');
+      button.style.pointerEvents = 'auto';
+      button.style.opacity = '0.5';
+      button.addEventListener('click', function(event) {
+          event.preventDefault();
+          alert("The app is not available in your location.");
+      });
+  }
+
+  try {
+      const response = await fetch('https://ipapi.co/json/');
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      const userState = data.region ? data.region.trim() : '';
+      
+      console.log("Detected User State:", userState);
+
+      if (legalStates.includes(userState)) {
+          try {
+              const linkResponse = await fetch('https://us-central1-payday-8ab25.cloudfunctions.net/appLinkCaller');
+              if (!linkResponse.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              const linkData = await linkResponse.json();
+              const appUrl = linkData.APP_URL;
+
+              if (appUrl) {
+                  button.href = appUrl;
+              } else {
+                  console.error('No valid URL received.');
+                  disableButton();
+              }
+          } catch (error) {
+              console.error('Error fetching the download link:', error);
+              disableButton();
+          }
+      } else {
+          disableButton();
+      }
+  } catch (error) {
+      console.error('Error fetching location data:', error);
+      disableButton();
+  }
 });
