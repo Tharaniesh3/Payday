@@ -19,7 +19,7 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   const ufcEvents = data.documents.filter(document => document.SPORTS_NAME === "UFC");
   let ufcRows = '';
   ufcEvents.forEach((document, index) => {
-    if(index !== 0) { // Ignore <hr> for the first iteration
+    if(index !== 0) {
       ufcRows +=`<hr style="opacity:50%;">`;
     }
     ufcRows += `<div class="card1">`;
