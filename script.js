@@ -61,7 +61,6 @@ fetch("https://us-central1-payday-8ab25.cloudfunctions.net/getMatchesWeb")
   })
   .catch(error => console.error('Error fetching match data:', error));
 
-// Function to convert GMT time to local time
 function convertToLocalTime(gmtTimeString) {
   const localTime = new Date(gmtTimeString);
   return localTime.toLocaleString(undefined, {
@@ -72,7 +71,7 @@ function convertToLocalTime(gmtTimeString) {
     hour: 'numeric',
     minute: 'numeric',
     second: 'numeric',
-    hour12: true // For 12-hour format, remove if 24-hour format is preferred
+    hour12: true 
   });
 }
 
